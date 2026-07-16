@@ -1,0 +1,270 @@
+{
+  "id": "be5fb50a-fbad-460e-b3b0-7b5c7ebd7789",
+  "revision": 0,
+  "last_node_id": 8,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "MarkdownNote",
+      "pos": [
+        -582.8850708007812,
+        84.68573760986328
+      ],
+      "size": [
+        666.392333984375,
+        960.5010375976562
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👑 Pixaroma - Note - START HERE (Episode 65)",
+      "properties": {},
+      "widgets_values": [
+        "# MODELS AND NODES USED IN THIS WORKFLOW  \n\n---\n\n## 🧩 Node Required  \n- **VibeVoice ComfyUI** (install via ComfyUI Manager)\n\n---\n\n## 🎙️ VibeVoice-Q8 Setup (ComfyUI)\n\n---\n\n### 🟣 Step 1 — Create the Base Folder\nCreate a folder named **vibevoice** here:\n```\n.../ComfyUI/models/vibevoice/\n```\n\n---\n\n### 🟣 Step 2 — Add the Tokenizer (Required)\nInside the `vibevoice` folder, create another folder named **tokenizer**:\n```\n.../ComfyUI/models/vibevoice/tokenizer/\n```\n\nDownload the **Qwen2.5-1.5B tokenizer** files from:  \n👉 [https://huggingface.co/Qwen/Qwen2.5-1.5B/tree/main](https://huggingface.co/Qwen/Qwen2.5-1.5B/tree/main)\n\nThen place these files inside the **tokenizer** folder:\n```\ntokenizer_config.json\nvocab.json\nmerges.txt\ntokenizer.json\n```\n\n---\n\n### 🟣 Step 3 — Add the VibeVoice-Q8 Model\nInside the same `vibevoice` folder, create another folder named **VibeVoice-Q8**:\n```\n.../ComfyUI/models/vibevoice/VibeVoice-Q8/\n```\n\nDownload the model from:  \n👉 [https://huggingface.co/FabioSarracino/VibeVoice-Large-Q8/tree/main](https://huggingface.co/FabioSarracino/VibeVoice-Large-Q8/tree/main)\n\nPlace these files inside the **VibeVoice-Q8** folder:\n```\nconfig.json\ngeneration_config.json\nmodel.safetensors.index.json\nmodel-00001-of-00003.safetensors\nmodel-00002-of-00003.safetensors\nmodel-00003-of-00003.safetensors\npreprocessor_config.json\n```\n\n---\n\n### 🟣 Model Info\nSize: ~11.6GB download (38% reduction from full model)  \nVRAM: ~12GB (40% reduction from full precision)  \nSpeed: Balanced inference  \nQuality: Identical to full precision - perfect audio preservation  \nUse Case: Production-quality audio with 12GB VRAM GPUs (RTX 3060, 4070 Ti, etc.)  \nQuantization: Selective 8-bit - only LLM quantized, audio components at full precision  \n\n---\n\n## 📚 Resources  \n🎥 **Tutorials:** [Pixaroma YouTube](https://www.youtube.com/@pixaroma)  \n💬 **Community:** [Discord](https://discord.com/invite/gggpkVgBf3)  \n📘 **GitHub:** [VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "LoadAudio",
+      "pos": [
+        107.14141845703125,
+        3.5636918544769287
+      ],
+      "size": [
+        274.080078125,
+        136
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.62",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "sample man voice demo.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 7,
+      "type": "LoadAudio",
+      "pos": [
+        107.14141845703125,
+        188.41986083984375
+      ],
+      "size": [
+        274.080078125,
+        136
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.62",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "sample female voice demo.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 8,
+      "type": "VibeVoiceMultipleSpeakersNode",
+      "pos": [
+        409.5832214355469,
+        4.213021278381348
+      ],
+      "size": [
+        501.12384033203125,
+        711.6990356445312
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "speaker1_voice",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 4
+        },
+        {
+          "name": "speaker2_voice",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 5
+        },
+        {
+          "name": "speaker3_voice",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "speaker4_voice",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "lora",
+          "shape": 7,
+          "type": "LORA_CONFIG",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "vibevoice-comfyui",
+        "ver": "1.8.1",
+        "Node name for S&R": "VibeVoiceMultipleSpeakersNode"
+      },
+      "widgets_values": [
+        "[1]: Hello, this is the first speaker.\n[2]: Hi there, I'm the second speaker.\n",
+        "VibeVoice-Q8",
+        "auto",
+        "full precision",
+        true,
+        20,
+        1512823054,
+        "randomize",
+        1.3,
+        false,
+        0.95,
+        0.95,
+        1
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 4,
+      "type": "SaveAudio",
+      "pos": [
+        934.7003173828125,
+        3.5636770725250244
+      ],
+      "size": [
+        270,
+        112
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.62",
+        "Node name for S&R": "SaveAudio"
+      },
+      "widgets_values": [
+        "audio/ComfyUI"
+      ]
+    }
+  ],
+  "links": [
+    [
+      4,
+      3,
+      0,
+      8,
+      0,
+      "AUDIO"
+    ],
+    [
+      5,
+      7,
+      0,
+      8,
+      1,
+      "AUDIO"
+    ],
+    [
+      6,
+      8,
+      0,
+      4,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "VibeVoice Q8 MULTI ~ 12GB VRAM",
+      "bounding": [
+        -580.111083984375,
+        -42.91526794433594,
+        664.531005859375,
+        80
+      ],
+      "color": "#b58b2a",
+      "font_size": 40,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9229599817706766,
+      "offset": [
+        674.609415664514,
+        96.54976619635835
+      ]
+    },
+    "frontendVersion": "1.27.7",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

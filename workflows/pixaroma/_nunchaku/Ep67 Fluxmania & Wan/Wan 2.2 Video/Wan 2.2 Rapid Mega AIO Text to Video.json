@@ -1,0 +1,737 @@
+{
+  "id": "1fd8de19-e2a7-4627-8a58-dfb5b4757b44",
+  "revision": 0,
+  "last_node_id": 144,
+  "last_link_id": 217,
+  "nodes": [
+    {
+      "id": 117,
+      "type": "CLIPTextEncode",
+      "pos": [
+        122.30155181884766,
+        578.9170532226562
+      ],
+      "size": [
+        425.27801513671875,
+        180.6060791015625
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 203
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            200
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 115,
+      "type": "VAEDecode",
+      "pos": [
+        1178.7783203125,
+        245.76925659179688
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 212
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 213
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            181
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 122,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1413.216064453125,
+        244.18016052246094
+      ],
+      "size": [
+        347.4019470214844,
+        915.4967041015625
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 181
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "4c7858ddd5126f7293dc3c9f6e0fc4c263cde079",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "WanVideo",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "WanVideo_00011.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "WanVideo_00011.png",
+            "fullpath": "D:\\ComfyUI-NextSept\\ComfyUI-Easy-Install\\ComfyUI\\output\\WanVideo_00011.mp4"
+          },
+          "muted": false
+        }
+      }
+    },
+    {
+      "id": 142,
+      "type": "ModelSamplingSD3",
+      "pos": [
+        579.3384399414062,
+        152.29542541503906
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 215
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            216
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "ModelSamplingSD3"
+      },
+      "widgets_values": [
+        8
+      ]
+    },
+    {
+      "id": 80,
+      "type": "MarkdownNote",
+      "pos": [
+        240,
+        750
+      ],
+      "size": [
+        300.2958068847656,
+        148.33238220214844
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "✅ Recommended Length (Frames)",
+      "properties": {},
+      "widgets_values": [
+        "### **For 16 FPS:**  \n**Duration → Length Value (in the Latent Video Node)** \n- **1 second** → `17 frames`  \n- **2 seconds** → `33 frames`  \n- **3 seconds** → `49 frames`  \n- **4 seconds** → `65 frames`  \n- **5 seconds** → `81 frames`  "
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 141,
+      "type": "KSampler",
+      "pos": [
+        884.1258544921875,
+        244.07540893554688
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 216
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 210
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 211
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 214
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            212
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        185665929254267,
+        "randomize",
+        4,
+        1,
+        "euler_ancestral",
+        "beta",
+        1
+      ]
+    },
+    {
+      "id": 77,
+      "type": "MarkdownNote",
+      "pos": [
+        616.8934326171875,
+        567.7354736328125
+      ],
+      "size": [
+        210,
+        319.7884826660156
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Wan 2.2 Resolutions",
+      "properties": {},
+      "widgets_values": [
+        "### ⚠️ Use a width and height that match the ratio of your loaded image.\n\n| **Aspect Ratio** | **Width × Height** |\n|------------------|--------------------|\n| **9:16**         | **480 × 832**      |\n|                  | 576 × 1024         |\n|                  | 720 × 1280         |\n| **16:9**         | **832 × 480**      |\n|                  | 1280 × 720         |\n|                  | 1024 × 576         |\n| **1:1**          | **512 × 512**      |\n|                  | 640 × 640          |\n|                  | 768 × 768          |\n"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 140,
+      "type": "PrimitiveNode",
+      "pos": [
+        240,
+        610
+      ],
+      "size": [
+        300.2958068847656,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "links": [
+            205
+          ]
+        }
+      ],
+      "title": "Length (Number of Frames)",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        81,
+        "fixed"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 137,
+      "type": "WanVaceToVideo",
+      "pos": [
+        584.541748046875,
+        263.169189453125
+      ],
+      "size": [
+        270,
+        254
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 199
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 200
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 201
+        },
+        {
+          "name": "control_video",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "control_masks",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "reference_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "link": 205
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            210
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            211
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            214
+          ]
+        },
+        {
+          "name": "trim_latent",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "WanVaceToVideo"
+      },
+      "widgets_values": [
+        480,
+        832,
+        81,
+        1,
+        0
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 112,
+      "type": "CLIPTextEncode",
+      "pos": [
+        92.15827178955078,
+        255.69813537597656
+      ],
+      "size": [
+        455.4212951660156,
+        277.13848876953125
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 202
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            199
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "young woman with pastel purple curly hair and clear glasses, sitting in a cozy bedroom with warm morning light streaming through a window, soft natural lighting, gentle depth of field, relaxed and calm expression, casual white t-shirt, books and plants in the background, cinematic composition, realistic texture, soft focus on face, warm color palette, intimate atmosphere, slow cinematic camera movement, shallow focus on subject’s face"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 132,
+      "type": "Label (rgthree)",
+      "pos": [
+        -751.4798583984375,
+        172.73904418945312
+      ],
+      "size": [
+        400.1640625,
+        23
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Wan 2.2 Rapid Mega AIO Text to Video",
+      "properties": {
+        "fontSize": 23,
+        "fontFamily": "Arial",
+        "fontColor": "#f8a742",
+        "textAlign": "center",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 136,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -310.1077880859375,
+        241.27679443359375
+      ],
+      "size": [
+        374.3772888183594,
+        98
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            215
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            202,
+            203
+          ]
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            201,
+            213
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.64",
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "wan2.2-rapid-mega-aio-v8.safetensors"
+      ]
+    },
+    {
+      "id": 144,
+      "type": "MarkdownNote",
+      "pos": [
+        -776.9459228515625,
+        236.19642639160156
+      ],
+      "size": [
+        444.7822265625,
+        334.6007385253906
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👑 Pixaroma - Note - START HERE (Episode 67)",
+      "properties": {},
+      "widgets_values": [
+        "# MODELS USED IN THIS WORKFLOW  \n---\n\n---\n\n## 🟣 Load Checkpoint \nDownload **wan2.2-rapid-mega-aio-v8.safetensors** from [HERE](https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/resolve/main/Mega-v8/wan2.2-rapid-mega-aio-v8.safetensors?download=true)  \n\n📁 **Place in:** `ComfyUI/models/checkpoints`  \n\nMore versions [HERE](https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/tree/main/Mega-v8) and [HERE](https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/tree/main)\n\n---  \n\n## 🧩 Nodes Installed from Manager  \n\n- **ComfyUI-VideoHelperSuite**\n- **rgthree-comfy**\n\n## 📚 Resources  \n🎥 **Tutorials:** [Pixaroma YouTube Channel](https://www.youtube.com/@pixaroma)  \n💬 **Community Discord:** [Join Here](https://discord.com/invite/gggpkVgBf3)\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      181,
+      115,
+      0,
+      122,
+      0,
+      "IMAGE"
+    ],
+    [
+      199,
+      112,
+      0,
+      137,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      200,
+      117,
+      0,
+      137,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      201,
+      136,
+      2,
+      137,
+      2,
+      "VAE"
+    ],
+    [
+      202,
+      136,
+      1,
+      112,
+      0,
+      "CLIP"
+    ],
+    [
+      203,
+      136,
+      1,
+      117,
+      0,
+      "CLIP"
+    ],
+    [
+      205,
+      140,
+      0,
+      137,
+      6,
+      "INT"
+    ],
+    [
+      210,
+      137,
+      0,
+      141,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      211,
+      137,
+      1,
+      141,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      212,
+      141,
+      0,
+      115,
+      0,
+      "LATENT"
+    ],
+    [
+      213,
+      136,
+      2,
+      115,
+      1,
+      "VAE"
+    ],
+    [
+      214,
+      137,
+      2,
+      141,
+      3,
+      "LATENT"
+    ],
+    [
+      215,
+      136,
+      0,
+      142,
+      0,
+      "MODEL"
+    ],
+    [
+      216,
+      142,
+      0,
+      141,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8390545288825144,
+      "offset": [
+        841.0154068183967,
+        5.5980414138681756
+      ]
+    },
+    "frontendVersion": "1.27.10",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

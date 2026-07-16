@@ -1,0 +1,210 @@
+{
+  "id": "be5fb50a-fbad-460e-b3b0-7b5c7ebd7789",
+  "revision": 0,
+  "last_node_id": 6,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "MarkdownNote",
+      "pos": [
+        -582.8850708007812,
+        84.68573760986328
+      ],
+      "size": [
+        666.392333984375,
+        940.9985961914062
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👑 Pixaroma - Note - START HERE (Episode 65)",
+      "properties": {},
+      "widgets_values": [
+        "# MODELS AND NODES USED IN THIS WORKFLOW  \n\n---\n\n## 🧩 Node Required  \n- **VibeVoice ComfyUI** (install via ComfyUI Manager)\n\n---\n\n## 🎙️ VibeVoice-1.5B Setup (ComfyUI)\n\n---\n\n### 🟣 Step 1 — Create the Base Folder\nCreate a folder named **vibevoice** here:\n```\n.../ComfyUI/models/vibevoice/\n```\n\n---\n\n### 🟣 Step 2 — Add the Tokenizer (Required)\nInside the `vibevoice` folder, create another folder named **tokenizer**:\n```\n.../ComfyUI/models/vibevoice/tokenizer/\n```\n\nDownload the **Qwen2.5-1.5B tokenizer** files from:  \n👉 [https://huggingface.co/Qwen/Qwen2.5-1.5B/tree/main](https://huggingface.co/Qwen/Qwen2.5-1.5B/tree/main)\n\nThen place these files inside the **tokenizer** folder:\n```\ntokenizer_config.json\nvocab.json\nmerges.txt\ntokenizer.json\n```\n\n---\n\n### 🟣 Step 3 — Add the VibeVoice-1.5B Model\nInside the same `vibevoice` folder, create another folder named **VibeVoice-1.5B**:\n```\n.../ComfyUI/models/vibevoice/VibeVoice-1.5B/\n```\n\nDownload the model from:  \n👉 [https://huggingface.co/microsoft/VibeVoice-1.5B/tree/main](https://huggingface.co/microsoft/VibeVoice-1.5B/tree/main)\n\nPlace these files inside the **VibeVoice-1.5B** folder:\n```\nconfig.json\nmodel.safetensors.index.json\nmodel-00001-of-00003.safetensors\nmodel-00002-of-00003.safetensors\nmodel-00003-of-00003.safetensors\npreprocessor_config.json\n```\n\n---\n\n### 🟣 Model Info\nSize: ~5.4GB download  \nVRAM: ~6GB  \nSpeed: Faster inference  \nQuality: Good for single speaker  \nUse Case: Quick prototyping, single voices  \n\n---\n\n## 📚 Resources  \n🎥 **Tutorials:** [Pixaroma YouTube](https://www.youtube.com/@pixaroma)  \n💬 **Community:** [Discord](https://discord.com/invite/gggpkVgBf3)  \n📘 **GitHub:** [VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "LoadAudio",
+      "pos": [
+        107.91996765136719,
+        3.5636918544769287
+      ],
+      "size": [
+        274.080078125,
+        136
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.62",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "sample man voice demo.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VibeVoiceSingleSpeakerNode",
+      "pos": [
+        403.129638671875,
+        6.380672454833984
+      ],
+      "size": [
+        513.6199951171875,
+        724.3108520507812
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "voice_to_clone",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 1
+        },
+        {
+          "name": "lora",
+          "shape": 7,
+          "type": "LORA_CONFIG",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "vibevoice-comfyui",
+        "ver": "1.8.1",
+        "Node name for S&R": "VibeVoiceSingleSpeakerNode"
+      },
+      "widgets_values": [
+        "A white bunny stands still, surrounded by falling petals. Is it hiding, or simply listening?",
+        "VibeVoice-1.5B",
+        "auto",
+        "full precision",
+        true,
+        20,
+        948339312,
+        "randomize",
+        1.3,
+        false,
+        0.95,
+        0.95,
+        250,
+        1
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 4,
+      "type": "SaveAudio",
+      "pos": [
+        937.5894775390625,
+        6.452920913696289
+      ],
+      "size": [
+        270,
+        112
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.62",
+        "Node name for S&R": "SaveAudio"
+      },
+      "widgets_values": [
+        "audio/ComfyUI"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      2,
+      0,
+      "AUDIO"
+    ],
+    [
+      2,
+      2,
+      0,
+      4,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "VibeVoice 1.5B ~ 6GB VRAM",
+      "bounding": [
+        -580.111083984375,
+        -42.91526794433594,
+        659.4747924804688,
+        80.72230529785156
+      ],
+      "color": "#b58b2a",
+      "font_size": 50,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9229599817706762,
+      "offset": [
+        754.8123197776736,
+        111.66637677028524
+      ]
+    },
+    "frontendVersion": "1.27.7",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
