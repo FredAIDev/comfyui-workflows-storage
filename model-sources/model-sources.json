@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "updated": "2026-07-18",
+  "_doc": "Model-source referential. Core notion: within a model_line, all DiT files whose grade shares the same `loader` are MUTUALLY REPLACEABLE in that loader's ComfyUI node (same for companions, per component). See model-sources/README.md for the schema, the derivation contract and the update method. `files: null` = not yet enumerated (run tools/refresh_model_sources.py, then ratify).",
+  "sources_frozen": {
+    "t0_official": ["Comfy-Org", "black-forest-labs", "Lightricks", "nunchaku-ai", "krea", "Qwen"],
+    "t1_gguf": ["unsloth", "QuantStack", "city96", "vantagewithai", "YarvixPA", "stduhpf", "rectangleworm", "jayn7"],
+    "t2_svdq": ["QuantFunc", "tonera", "stuqiu"],
+    "t3_comfy_quant": ["Winnougan", "silveroxides", "Kijai", "AX1Y2JP", "obsxrver", "Bedovyy", "cardamonnl"],
+    "watch_not_frozen": ["lite-infer", "rootonchair", "calcuis", "gguf-org", "chatpig", "realrebelai", "leejet", "wbruna", "spooknik", "SporkySporkness", "wangkanai", "worstplayer", "ZJMuYun97", "OzzyGT"],
+    "_warning": "The HF handle `nunchaku-tech` is an EMPTY org held by an unrelated user (official = nunchaku-ai). Never reference it."
+  },
+  "loaders": {
+    "standard": { "nodes": ["Load Diffusion Model", "Load Checkpoint"], "note": "comfy_quant metadata (fp8/fp8_scaled/mxfp8/nvfp4/int8-convrot) loads transparently on ComfyUI >= 0.27; nvfp4/mxfp8 are Blackwell-native, other GPUs dequantize" },
+    "gguf": { "nodes": ["Unet Loader (GGUF)", "CLIPLoader (gguf)", "DualCLIPLoader (gguf)"], "plugin": "city96/ComfyUI-GGUF" },
+    "nunchaku": { "nodes": ["NunchakuFluxDiTLoader", "NunchakuQwenImageDiTLoader", "NunchakuZImageDiTLoader", "NunchakuTextEncoderLoaderV2"], "plugin": "nunchaku-ai/ComfyUI-nunchaku", "note": "svdq-fp4 = Blackwell only; svdq-int4 = RTX20/30/40/A100" },
+    "nunchaku-fork": { "plugin": "vitoom-nunchaku wheels (tonera) or Hzj199/nunchaku", "note": "needed for lines upstream never merged (Flux.2 Klein, 2511/2512 Lightning, ERNIE)" },
+    "quantfunc-engine": { "plugin": "RealJonathanYip/ComfyUI-QuantFunc", "note": "separate engine; QuantFunc `Nunchaku-*` repos work with STOCK nunchaku nodes, `*-Series` repos need this engine" },
+    "sdcpp": { "note": "stable-diffusion.cpp conventions (cond/uncond splits); verify per-file before ComfyUI use" },
+    "diffusers": { "note": "NOT ComfyUI-loadable; listed for completeness only" }
+  },
+  "model_lines": [
+    {
+      "id": "qwen_image", "kind": "image", "base": "Comfy-Org/Qwen-Image_ComfyUI",
+      "companions": {
+        "text_encoder": [
+          { "loader": "standard", "repo": "Comfy-Org/Qwen-Image_ComfyUI", "files": null, "note": "qwen_2.5_vl_7b fp8" },
+          { "loader": "gguf", "repo": "unsloth/Qwen2.5-VL-7B-Instruct-GGUF", "files": null },
+          { "loader": "standard", "repo": "Winnougan/Comfy-Qwen3-VL-INT8", "files": null, "note": "int8_convrot" }
+        ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/Qwen-Image_ComfyUI", "files": null, "note": "qwen_image_vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image_ComfyUI", "files": null, "note": "bf16 + fp8_e4m3fn + fp8_hq + fp8mixed" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image_ComfyUI", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "city96/Qwen-Image-gguf", "files": null, "note": "BF16+Q2_K..Q8_0" }, { "repo": "QuantStack/Qwen-Image-GGUF", "files": null }, { "repo": "unsloth/Qwen-Image-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-qwen-image", "files": null, "note": "int4+fp4, r32/r128, incl. lightning 4/8-step" } ] }
+      ]
+    },
+    {
+      "id": "qwen_image_2512", "kind": "image", "base": "Comfy-Org/Qwen-Image_ComfyUI",
+      "companions": { "_inherit": "qwen_image" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image_ComfyUI", "files": null, "note": "2512 fp8_e4m3fn" } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Winnougan/Qwen-Image-INT8", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/Qwen-Image-2512-GGUF", "files": null, "note": "BF16/F16 + Q2_K..Q8_0" }, { "repo": "vantagewithai/Qwen-Image-2512-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "QuantFunc/Nunchaku-Qwen-Image-2512", "files": null, "note": "int4+fp4, r32/r128/r256, STOCK nodes" }, { "repo": "stuqiu/nunchaku-qwen-image-2512", "files": null, "note": "fp4 only, stock-compatible" }, { "repo": "tonera/Qwen-Image-2512-Lightning-Nunchaku", "files": null, "note": "Lightning distill, vitoom fork REQUIRED" } ] }
+      ]
+    },
+    {
+      "id": "qwen_image_edit", "kind": "image", "base": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "companions": { "_inherit": "qwen_image" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI", "files": null, "note": "fp8_e4m3fn" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/Qwen-Image-Edit-GGUF", "files": null }, { "repo": "unsloth/Qwen-Image-Edit-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-qwen-image-edit", "files": null, "note": "int4+fp4, r32/r128, incl. lightning" } ] }
+      ]
+    },
+    {
+      "id": "qwen_image_edit_2509", "kind": "image", "base": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "companions": { "_inherit": "qwen_image" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI", "files": null, "note": "2509 fp8_e4m3fn + fp8mixed" }, { "repo": "silveroxides/Qwen-Image-fp8-scaled-quants", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/Qwen-Image-Edit-2509-GGUF", "files": null, "note": "low quants re-tuned 2025-10" }, { "repo": "unsloth/Qwen-Image-Edit-2509-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-qwen-image-edit-2509", "files": null, "note": "richest official repo (20 files, lightning v2)" } ] }
+      ]
+    },
+    {
+      "id": "qwen_image_edit_2511", "kind": "image", "base": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "companions": { "_inherit": "qwen_image" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI", "files": null, "note": "2511 fp8mixed" }, { "repo": "silveroxides/Qwen-Image-fp8-scaled-quants", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI", "files": null }, { "repo": "Winnougan/Qwen-Image-INT8", "files": null }, { "repo": "cardamonnl/Qwen-Image-Edit-2511-int8-convrot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/Qwen-Image-Edit-2511-GGUF", "files": null, "note": "BF16/F16 + Q2_K..Q8_0 incl Q3_K_L; QuantStack absent on 2511" }, { "repo": "vantagewithai/Qwen-Image-Edit-2511-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "QuantFunc/Nunchaku-Qwen-Image-EDIT-2511", "files": null, "note": "int4+fp4, r32/r128/r256, STOCK nodes" }, { "repo": "stuqiu/nunchaku-qwen-image-edit-2511", "files": null, "note": "fp4 only" }, { "repo": "tonera/Qwen-Image-Edit-2511-Lightning-Nunchaku", "files": null, "note": "vitoom fork REQUIRED" } ] }
+      ]
+    },
+    {
+      "id": "flux1_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-dev",
+      "companions": {
+        "text_encoder": [
+          { "loader": "gguf", "repo": "city96/t5-v1_1-xxl-encoder-gguf", "files": null, "note": "t5-xxl; clip_l stays safetensors" },
+          { "loader": "nunchaku", "repo": "nunchaku-ai/nunchaku-t5", "files": null, "note": "awq-int4" }
+        ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/flux1-dev", "files": null, "note": "ae.safetensors" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.1-dev", "files": null }, { "repo": "black-forest-labs/FLUX.1-dev-FP8", "files": null }, { "repo": "Comfy-Org/flux1-dev", "files": null, "note": "fp8 all-in-one checkpoint" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.1-dev-NVFP4", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Winnougan/Flux1-Dev-INT8-Convrot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "city96/FLUX.1-dev-gguf", "files": null, "note": "the historic reference (F16+Q2_K..Q8_0)" }, { "repo": "unsloth/FLUX.1-dev-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-dev", "files": null, "note": "int4+fp4 r32" } ] }
+      ]
+    },
+    {
+      "id": "flux1_kontext_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-Kontext-dev",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/flux1-kontext-dev_ComfyUI", "files": null, "note": "fp8_scaled" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.1-Kontext-dev-NVFP4", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/FLUX.1-Kontext-dev-GGUF", "files": null }, { "repo": "unsloth/FLUX.1-Kontext-dev-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-kontext-dev", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_krea_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-Krea-dev",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/FLUX.1-Krea-dev_ComfyUI", "files": null, "note": "fp8_scaled" }, { "repo": "Clybius/FLUX.1-Krea-dev-scaled-fp8", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/FLUX.1-Krea-dev-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-krea-dev", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_depth_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-Depth-dev",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Comfy-Org/flux1-dev", "files": null, "note": "flux1-depth-dev-nvfp4" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "stale", "sources": [ { "repo": "SporkySporkness/FLUX.1-Depth-dev-GGUF", "files": null, "note": "2024, only source" } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-depth-dev", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_canny_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-Canny-dev",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "stale", "sources": [ { "repo": "SporkySporkness/FLUX.1-Canny-dev-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-canny-dev", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_fill_dev", "kind": "image", "base": "black-forest-labs/FLUX.1-Fill-dev",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "YarvixPA/FLUX.1-Fill-dev-GGUF", "files": null, "note": "canonical fill GGUF" } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-fill-dev", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_schnell", "kind": "image", "base": "black-forest-labs/FLUX.1-schnell",
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/flux1-schnell", "files": null, "note": "fp8 all-in-one" }, { "repo": "Kijai/flux-fp8", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "city96/FLUX.1-schnell-gguf", "files": null }, { "repo": "unsloth/FLUX.1-schnell-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-schnell", "files": null } ] }
+      ]
+    },
+    {
+      "id": "flux1_dev_colossus", "kind": "image", "base": null,
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-dev-colossus", "files": null, "note": "colossus v12 — the ONLY HF quant; fp8/int4 exist on Civitai only (off-referential)" } ] }
+      ],
+      "gaps": ["rich-on-hf", "gguf", "standard-quants"]
+    },
+    {
+      "id": "flux1_schnell_pix2pix_turbo", "kind": "image", "base": null,
+      "companions": { "_inherit": "flux1_dev" },
+      "grades": [
+        { "grade": "svdq", "loader": "nunchaku", "hw": "any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-flux.1-schnell-pix2pix-turbo", "files": null, "note": "int4 only; sketch adapter on schnell" } ] }
+      ],
+      "gaps": ["gguf", "standard-quants"]
+    },
+    {
+      "id": "flux2_dev", "kind": "image", "base": "black-forest-labs/FLUX.2-dev",
+      "companions": {
+        "text_encoder": [ { "loader": "gguf", "repo": "unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF", "files": null }, { "loader": "standard", "repo": "silveroxides/FLUX.2-dev-fp8_scaled", "files": null, "note": "Mistral TEs bundled" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/flux2-dev", "files": null, "note": "flux2 vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/flux2-dev", "files": null, "note": "fp8mixed 35.5GB" }, { "repo": "silveroxides/FLUX.2-dev-fp8_scaled", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.2-dev-NVFP4", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "AX1Y2JP/FLUX.2-dev-INT8-ConvRot", "files": null }, { "repo": "silveroxides/FLUX.2-dev-fp8_scaled", "files": null, "note": "int8-convrot-simple variant" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "city96/FLUX.2-dev-gguf", "files": null, "note": "hand-tuned high-precision blocks" }, { "repo": "unsloth/FLUX.2-dev-GGUF", "files": null } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "flux2_klein_9b", "kind": "image", "base": "black-forest-labs/FLUX.2-klein-9b",
+      "companions": {
+        "text_encoder": [ { "loader": "gguf", "repo": "unsloth/Qwen3-8B-GGUF", "files": null, "note": "Qwen3-8B embedder" }, { "loader": "standard", "repo": "Winnougan/Klein9b-Distilled-Base-INT8-Convrot", "files": null, "note": "qwen_3_8b int8_convrot" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/flux2-dev", "files": null, "note": "flux2 vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.2-klein-9b-fp8", "files": null, "note": "also base + kv variants" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.2-klein-9b-nvfp4", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Winnougan/Klein9b-Distilled-Base-INT8-Convrot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/FLUX.2-klein-9B-GGUF", "files": null, "note": "kv variant: QuantStack/FLUX.2-Klein-9B-KV-GGUF + ComfyUI-YarvixPA KV node" } ] },
+        { "grade": "svdq", "loader": "nunchaku-fork", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "tonera/FLUX.2-klein-9B-Nunchaku", "files": null, "note": "vitoom fork REQUIRED; also 9b-kv" }, { "repo": "QuantFunc/Klein-9B-Series", "files": null, "note": "QuantFunc engine" } ] }
+      ]
+    },
+    {
+      "id": "flux2_klein_4b", "kind": "image", "base": "black-forest-labs/FLUX.2-klein-4b",
+      "companions": {
+        "text_encoder": [ { "loader": "gguf", "repo": "unsloth/Qwen3-4B-Instruct-2507-GGUF", "files": null, "note": "Qwen3-4B embedder" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/flux2-dev", "files": null, "note": "flux2 vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.2-klein-4b-fp8", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "black-forest-labs/FLUX.2-klein-4b-nvfp4", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/FLUX.2-klein-4B-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "nunchaku-fork", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "tonera/FLUX.2-klein-4B-Nunchaku", "files": null, "note": "vitoom fork REQUIRED" }, { "repo": "QuantFunc/Klein-4B-Series", "files": null, "note": "QuantFunc engine" } ] }
+      ]
+    },
+    {
+      "id": "sdxl", "kind": "image", "base": "stabilityai/stable-diffusion-xl-base-1.0",
+      "companions": { "text_encoder": [], "vae": [] },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "stabilityai/stable-diffusion-xl-base-1.0", "files": null, "note": "safetensors is the norm; runtime --fp8 casting covers degraded" } ] },
+        { "grade": "fp8", "loader": "standard", "hw": "any", "status": "stale", "sources": [ { "repo": "wangkanai/sdxl-fp8", "files": null, "note": "2024 all-in-one" } ] },
+        { "grade": "svdq", "loader": "diffusers", "hw": "any", "status": "diffusers-only", "sources": [ { "repo": "nunchaku-ai/nunchaku-sdxl", "files": null, "note": "int4 r32; NO ComfyUI SDXL node in ComfyUI-nunchaku" } ] }
+      ],
+      "gaps": ["gguf-serious", "svdq-comfyui"]
+    },
+    {
+      "id": "sdxl_turbo", "kind": "image", "base": "stabilityai/sdxl-turbo",
+      "companions": { "text_encoder": [], "vae": [] },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "stabilityai/sdxl-turbo", "files": null } ] },
+        { "grade": "svdq", "loader": "diffusers", "hw": "any", "status": "diffusers-only", "sources": [ { "repo": "nunchaku-ai/nunchaku-sdxl-turbo", "files": null, "note": "int4 r32" } ] }
+      ],
+      "gaps": ["gguf-serious", "standard-quants-current", "svdq-comfyui"]
+    },
+    {
+      "id": "z_image_turbo", "kind": "image", "base": "Comfy-Org/z_image_turbo",
+      "companions": {
+        "text_encoder": [ { "loader": "gguf", "repo": "worstplayer/Z-Image_Qwen_3_4b_text_encoder_GGUF", "files": null }, { "loader": "standard", "repo": "Comfy-Org/z_image", "files": null, "note": "qwen_3_4b fp8_mixed + fp4_mixed" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/z_image", "files": null } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/z_image_turbo", "files": null }, { "repo": "Kijai/Z-Image_comfy_fp8_scaled", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Comfy-Org/z_image_turbo", "files": null, "note": "4.5GB" } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/z_image_turbo", "files": null }, { "repo": "Winnougan/Z-Image-Base-Turbo-INT8-Convrot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/Z-Image-Turbo-GGUF", "files": null }, { "repo": "jayn7/Z-Image-Turbo-GGUF", "files": null, "note": "community-trusted first mover" } ] },
+        { "grade": "svdq", "loader": "nunchaku", "hw": "fp4=blackwell int4=any", "status": "weights", "sources": [ { "repo": "nunchaku-ai/nunchaku-z-image-turbo", "files": null, "note": "int4 r32/r128/r256, fp4 r32/r128; plugin >= 1.1" } ] }
+      ]
+    },
+    {
+      "id": "z_image", "kind": "image", "base": "Comfy-Org/z_image",
+      "companions": { "_inherit": "z_image_turbo" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/z_image", "files": null, "note": "bf16 + int8_convrot" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/Z-Image-GGUF", "files": null }, { "repo": "jayn7/Z-Image-GGUF", "files": null } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "ernie_image", "kind": "image", "base": "Comfy-Org/ERNIE-Image",
+      "companions": {
+        "text_encoder": [ { "loader": "standard", "repo": "Comfy-Org/ERNIE-Image", "files": null, "note": "Ministral-3-3B + prompt-enhancer, safetensors recommended" }, { "loader": "gguf", "repo": "Green-Sky/Ernie-Image-Prompt-Enhancer-Ministral-3B-GGUF", "files": null } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/ERNIE-Image", "files": null, "note": "flux2 vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/ERNIE-Image", "files": null, "note": "bf16 only" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Bedovyy/ERNIE-Image-Quantized", "files": null } ] },
+        { "grade": "int8_rowwise", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Bedovyy/ERNIE-Image-Quantized", "files": null, "note": "pre-native builds need ComfyUI-INT8-Fast" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/ERNIE-Image-GGUF", "files": null, "note": "+UD quants" }, { "repo": "vantagewithai/ERNIE-Image-GGUF-Base-Turbo", "files": null } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "ernie_image_turbo", "kind": "image", "base": "Comfy-Org/ERNIE-Image",
+      "companions": { "_inherit": "ernie_image" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/ERNIE-Image", "files": null, "note": "turbo bf16" }, { "repo": "Bedovyy/ERNIE-Image-Quantized", "files": null, "note": "fp8e4m3" }, { "repo": "Abiray/ERNIE-Image-Turbo-FP8-NVFP4", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Bedovyy/ERNIE-Image-Quantized", "files": null, "note": "4.78GB" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/ERNIE-Image-Turbo-GGUF", "files": null } ] },
+        { "grade": "svdq", "loader": "diffusers", "hw": "any", "status": "diffusers-only", "sources": [ { "repo": "rootonchair/ERNIE-Image-Turbo-nunchaku-lite", "files": null, "note": "nunchaku-lite path" }, { "repo": "ZJMuYun97/ERNIE-Image-Nunchaku", "files": null, "note": "int4 r64, Hzj199 fork; NO ComfyUI ERNIE node" } ] }
+      ]
+    },
+    {
+      "id": "ideogram_4", "kind": "image", "base": "ideogram-ai/ideogram-4-fp8",
+      "companions": {
+        "text_encoder": [ { "loader": "standard", "repo": "Comfy-Org/Ideogram-4", "files": null, "note": "qwen3vl_8b fp8_scaled + nvfp4" }, { "loader": "gguf", "repo": "Qwen/Qwen3-VL-8B-Instruct-GGUF", "files": null } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/Ideogram-4", "files": null, "note": "flux2 vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Ideogram-4", "files": null, "note": "fp8_scaled, cond+uncond pairs" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Comfy-Org/Ideogram-4", "files": null, "note": "nvfp4_mixed" } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Ideogram-4", "files": null } ] },
+        { "grade": "gguf", "loader": "sdcpp", "hw": "any", "status": "weights", "sources": [ { "repo": "stduhpf/ideogram-4-gguf", "files": null, "note": "cond/uncond split — verify per-file for ComfyUI" }, { "repo": "rectangleworm/ideogram-4-gguf", "files": null, "note": "most complete pack (TE+VAE bundled); filter NSFW loras" } ] },
+        { "grade": "svdq", "loader": "quantfunc-engine", "hw": "any", "status": "config-only", "sources": [ { "repo": "QuantFunc/Ideogram-4-Series", "files": null, "note": "a4w4 recipe, runtime quant of the fp8 base — NO weights" } ] }
+      ]
+    },
+    {
+      "id": "krea_2_raw", "kind": "image", "base": "krea/Krea-2",
+      "companions": {
+        "text_encoder": [ { "loader": "standard", "repo": "Comfy-Org/Krea-2", "files": null, "note": "qwen3vl_4b fp8_scaled" }, { "loader": "gguf", "repo": "unsloth/Qwen3-VL-4B-Instruct-GGUF", "files": null }, { "loader": "standard", "repo": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8", "files": null, "note": "qwen3vl_4b int8 (+uncensored)" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/Krea-2", "files": null, "note": "qwen_image vae" } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null, "note": "raw fp8_scaled" } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null }, { "repo": "AX1Y2JP/Krea-2-Raw-INT8-ConvRot", "files": null }, { "repo": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "vantagewithai/Krea-2-Raw-GGUF", "files": null }, { "repo": "realrebelai/KREA-2_GGUFs", "files": null } ] }
+      ],
+      "gaps": ["svdq-comfyui"]
+    },
+    {
+      "id": "krea_2_turbo", "kind": "image", "base": "krea/Krea-2-Turbo",
+      "companions": { "_inherit": "krea_2_raw" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null, "note": "turbo fp8_scaled" }, { "repo": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8", "files": null, "note": "5 formats + workflows JSON" } ] },
+        { "grade": "mxfp8", "loader": "standard", "hw": "blackwell-preferred", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null }, { "repo": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null }, { "repo": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Krea-2", "files": null }, { "repo": "AX1Y2JP/Krea-2-Turbo-INT8-ConvRot", "files": null }, { "repo": "obsxrver/ComfyUI-Native-INT8_ConvRot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "vantagewithai/Krea-2-Turbo-GGUF", "files": null, "note": "first mover" }, { "repo": "realrebelai/KREA-2_GGUFs", "files": null } ] },
+        { "grade": "svdq", "loader": "diffusers", "hw": "fp4=blackwell int4=any", "status": "diffusers-only", "sources": [ { "repo": "OzzyGT/Krea_2_Turbo_nunchaku_lite_nvfp4", "files": null }, { "repo": "Patil/krea-turbo-svdquant", "files": null, "note": "int4, custom loading; NO ComfyUI file" } ] }
+      ]
+    },
+    {
+      "id": "wan_2_2_t2v_a14b", "kind": "video", "base": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "companions": {
+        "text_encoder": [ { "loader": "gguf", "repo": "city96/umt5-xxl-encoder-gguf", "files": null }, { "loader": "standard", "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged", "files": null, "note": "umt5 fp8" } ],
+        "vae": [ { "loader": "standard", "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged", "files": null } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged", "files": null, "note": "fp8_scaled, hi+lo noise" }, { "repo": "Kijai/WanVideo_comfy_fp8_scaled", "files": null }, { "repo": "silveroxides/Wan_2.2-fp8_scaled_hybrid", "files": null } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "experimental", "sources": [ { "repo": "Kijai/WanVideo_comfy_nvfp4", "files": null, "note": "new 2026-05" } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "silveroxides/Wan_2.2-fp8_scaled_hybrid", "files": null, "note": "int8-convrot-simple" }, { "repo": "obsxrver/ComfyUI-Native-INT8_ConvRot", "files": null } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/Wan2.2-T2V-A14B-GGUF", "files": null, "note": "HighNoise+LowNoise subdirs" } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "wan_2_2_i2v_a14b", "kind": "video", "base": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "companions": { "_inherit": "wan_2_2_t2v_a14b" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged", "files": null }, { "repo": "Kijai/WanVideo_comfy_fp8_scaled", "files": null } ] },
+        { "grade": "int8_convrot", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Winnougan/Wan2.2-INT8-Convrot", "files": null, "note": "i2v hi+lo, 30xx target, umt5 int8 included" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/Wan2.2-I2V-A14B-GGUF", "files": null, "note": "the reference (336k dl/30d)" }, { "repo": "jayn7/WAN2.2-I2V-lightx2v-GGUF", "files": null, "note": "4-step distill" } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "wan_2_2_ti2v_5b", "kind": "video", "base": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "companions": { "_inherit": "wan_2_2_t2v_a14b" },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged", "files": null, "note": "fp8_scaled" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "QuantStack/Wan2.2-TI2V-5B-GGUF", "files": null } ] }
+      ],
+      "gaps": ["svdq"]
+    },
+    {
+      "id": "ltx_2_3", "kind": "video", "base": "Lightricks/LTX-2.3-fp8",
+      "companions": {
+        "text_encoder": [ { "loader": "standard", "repo": "Comfy-Org/ltx-2.3", "files": null, "note": "gemma_3_12B fp8_scaled + fp4_mixed" }, { "loader": "gguf", "repo": "unsloth/gemma-3-12b-it-GGUF", "files": null, "note": "ComfyUI-GGUF supports Gemma3-12B since 2026-01" }, { "loader": "standard", "repo": "Kijai/LTX2.3_comfy", "files": null, "note": "text-projection REQUIRED by GGUF workflows" } ],
+        "vae": [ { "loader": "standard", "repo": "Kijai/LTX2.3_comfy", "files": null } ]
+      },
+      "grades": [
+        { "grade": "rich", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Lightricks/LTX-2.3-fp8", "files": null, "note": "22b dev + distilled, official, built-in LTXVideo nodes" } ] },
+        { "grade": "nvfp4", "loader": "standard", "hw": "blackwell", "status": "weights", "sources": [ { "repo": "Lightricks/LTX-2.3-nvfp4", "files": null, "note": "22b dev" } ] },
+        { "grade": "int8", "loader": "standard", "hw": "any", "status": "weights", "sources": [ { "repo": "Winnougan/LTX-2.3-INT8", "files": null, "note": "+ Gemma-3-12B INT8 TE" } ] },
+        { "grade": "gguf", "loader": "gguf", "hw": "any", "status": "weights", "sources": [ { "repo": "unsloth/LTX-2.3-GGUF", "files": null, "note": "distilled + distilled-1.1, full ladder + UD quants" }, { "repo": "QuantStack/LTX-2.3-GGUF", "files": null, "note": "ONLY source of the dev variant" }, { "repo": "vantagewithai/LTX-2.3-GGUF", "files": null } ] }
+      ],
+      "gaps": ["svdq"]
+    }
+  ]
+}

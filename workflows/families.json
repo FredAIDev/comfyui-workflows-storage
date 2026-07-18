@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "updated": "2026-07-18",
+  "_doc": "Workflow-family manifest: 'these workflows share the same intention and params, with different tradeoffs'. Paths are relative to workflows/. A file absent from this manifest is simply ungrouped (fail-open). ComfyDock is the owner-editor; Muse only reads it and appends members (additive-only) when it pushes/pulls a variant. Entries carry ZERO Muse parameters and are fully creatable without Muse. `model_line` optionally joins model-sources/model-sources.json (gap view = this file x that file). `grade` is an OPAQUE label (rich/gguf/svdq/q5/...); `loader` names which node family the members' models belong to when it matters.",
+  "families": [
+    {
+      "id": "flux2_t2i",
+      "intent": "Flux.2 text-to-image (nominal t2i)",
+      "model_line": "flux2_dev",
+      "members": [
+        { "path": "muse/flux2-t2i.json", "grade": "rich" }
+      ]
+    },
+    {
+      "id": "qwen_aio_sneaky_robot",
+      "intent": "Qwen image all-in-one (Sneaky Robot)",
+      "model_line": "qwen_image",
+      "members": [
+        { "path": "Sneaky Robot/Qwen AIO Sneaky Robot Safetensors Workflow.json", "grade": "rich" },
+        { "path": "Sneaky Robot/Qwen AIO Sneaky Robot GGUF Workflow.json", "grade": "gguf" }
+      ]
+    },
+    {
+      "id": "nunchaku_flux1_kontext",
+      "intent": "Flux.1 Kontext edit (nunchaku examples)",
+      "model_line": "flux1_kontext_dev",
+      "members": [
+        { "path": "Nunchaku/Flux Kontext/nunchaku-flux.1-kontext-dev.json", "grade": "svdq" },
+        { "path": "Nunchaku/Flux Kontext/nunchaku-flux.1-kontext-dev-turbo_lora.json", "grade": "svdq-turbo" }
+      ]
+    }
+  ]
+}
