@@ -52,7 +52,7 @@
       {
         "id": "Comfy-Org/Pixal3D",
         "lastModified": "2026-07-05T05:12:45.000Z",
-        "downloads": 7618
+        "downloads": 7676
       },
       {
         "id": "Comfy-Org/TRELLIS.2",
@@ -72,7 +72,7 @@
       {
         "id": "Comfy-Org/Lens",
         "lastModified": "2026-06-30T14:27:47.000Z",
-        "downloads": 27728
+        "downloads": 27168
       },
       {
         "id": "Comfy-Org/Qwen3-VL",
@@ -97,7 +97,7 @@
       {
         "id": "Comfy-Org/HiDream-O1-Image",
         "lastModified": "2026-05-28T15:03:08.000Z",
-        "downloads": 47883
+        "downloads": 46745
       },
       {
         "id": "Comfy-Org/mediapipe",
@@ -112,7 +112,7 @@
       {
         "id": "Comfy-Org/Qwen3.5",
         "lastModified": "2026-05-20T09:09:56.000Z",
-        "downloads": 65827
+        "downloads": 64417
       },
       {
         "id": "Comfy-Org/void-model",
@@ -152,7 +152,7 @@
       {
         "id": "Comfy-Org/ace_step_1.5_ComfyUI_files",
         "lastModified": "2026-04-08T02:18:03.000Z",
-        "downloads": 350716
+        "downloads": 343966
       },
       {
         "id": "Comfy-Org/causal_forcing_framewise_ComfyUI_repackaged",
@@ -167,17 +167,17 @@
       {
         "id": "Comfy-Org/SDPose",
         "lastModified": "2026-03-03T23:03:30.000Z",
-        "downloads": 23182
+        "downloads": 22923
       },
       {
         "id": "Comfy-Org/HunyuanVideo_1.5_repackaged",
         "lastModified": "2026-02-19T00:44:15.000Z",
-        "downloads": 376097
+        "downloads": 370122
       },
       {
         "id": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
         "lastModified": "2026-01-28T12:44:01.000Z",
-        "downloads": 2167190
+        "downloads": 2117920
       },
       {
         "id": "Comfy-Org/vae-text-encorder-for-flux-klein-9b",
@@ -192,17 +192,17 @@
       {
         "id": "Comfy-Org/Chroma1-HD_repackaged",
         "lastModified": "2025-12-31T15:46:24.000Z",
-        "downloads": 37518
+        "downloads": 29527
       },
       {
         "id": "Comfy-Org/Qwen-Image-Layered_ComfyUI",
         "lastModified": "2025-12-22T05:40:08.000Z",
-        "downloads": 23430
+        "downloads": 23313
       },
       {
         "id": "Comfy-Org/NewBie-image-Exp0.1_repackaged",
         "lastModified": "2025-12-20T13:23:49.000Z",
-        "downloads": 37326
+        "downloads": 34667
       },
       {
         "id": "Comfy-Org/CLIP-ViT-H-14-laion2B-s32B-b79K_repackaged",
@@ -217,17 +217,17 @@
       {
         "id": "Comfy-Org/stable-diffusion-v1-5-archive",
         "lastModified": "2025-12-10T15:04:36.000Z",
-        "downloads": 6194897
+        "downloads": 5726121
       },
       {
         "id": "Comfy-Org/Chroma1-Radiance_Repackaged",
         "lastModified": "2025-12-10T12:57:24.000Z",
-        "downloads": 4866
+        "downloads": 4650
       },
       {
         "id": "Comfy-Org/Ovis-Image",
         "lastModified": "2025-12-02T01:50:06.000Z",
-        "downloads": 12248
+        "downloads": 11359
       },
       {
         "id": "Comfy-Org/stable_diffusion_2.1_unclip_repackaged",
@@ -237,184 +237,184 @@
       {
         "id": "Comfy-Org/T2I-Adapter_ComfyUI_Repackaged",
         "lastModified": "2025-10-13T04:43:49.000Z",
-        "downloads": 2310
+        "downloads": 2336
       },
       {
         "id": "Comfy-Org/stable-diffusion-3.5-controlnets_ComfyUI_repackaged",
         "lastModified": "2025-10-07T18:27:57.000Z",
-        "downloads": 15531
+        "downloads": 15279
       },
       {
         "id": "Comfy-Org/OneReward_repackaged",
         "lastModified": "2025-09-21T14:52:17.000Z",
-        "downloads": 8810
+        "downloads": 8820
       },
       {
         "id": "Comfy-Org/HuMo_ComfyUI",
         "lastModified": "2025-09-19T02:48:41.000Z",
-        "downloads": 10631
+        "downloads": 10498
       },
       {
         "id": "Comfy-Org/HunyuanImage_2.1_ComfyUI",
         "lastModified": "2025-09-17T06:04:00.000Z",
-        "downloads": 22327
+        "downloads": 21816
       },
       {
         "id": "Comfy-Org/Qwen-Image-InstantX-ControlNets",
         "lastModified": "2025-09-11T16:55:46.000Z",
-        "downloads": 29424
+        "downloads": 29346
       },
       {
         "id": "Comfy-Org/hunyuan3D_2.1_repackaged",
         "lastModified": "2025-09-08T18:26:28.000Z",
-        "downloads": 57840
+        "downloads": 56959
       },
       {
         "id": "Comfy-Org/USO_1.0_Repackaged",
         "lastModified": "2025-09-02T16:24:22.000Z",
-        "downloads": 31317
+        "downloads": 30506
       },
       {
         "id": "Comfy-Org/Qwen-Image-DiffSynth-ControlNets",
         "lastModified": "2025-08-21T20:20:43.000Z",
-        "downloads": 22538
+        "downloads": 21902
       },
       {
         "id": "Comfy-Org/stable-diffusion-3.5-fp8",
         "lastModified": "2025-08-05T22:41:00.000Z",
-        "downloads": 82960
+        "downloads": 84825
       },
       {
         "id": "Comfy-Org/sigclip_vision_384",
         "lastModified": "2025-08-05T22:40:36.000Z",
-        "downloads": 100116
+        "downloads": 94230
       },
       {
         "id": "Comfy-Org/mochi_preview_repackaged",
         "lastModified": "2025-08-05T22:39:31.000Z",
-        "downloads": 11916
+        "downloads": 11768
       },
       {
         "id": "Comfy-Org/Lumina_Image_2.0_Repackaged",
         "lastModified": "2025-08-05T22:38:58.000Z",
-        "downloads": 130196
+        "downloads": 120515
       },
       {
         "id": "Comfy-Org/HunyuanVideo_repackaged",
         "lastModified": "2025-08-05T22:38:29.000Z",
-        "downloads": 108227
+        "downloads": 111034
       },
       {
         "id": "Comfy-Org/ACE-Step_ComfyUI_repackaged",
         "lastModified": "2025-08-05T15:42:35.000Z",
-        "downloads": 24167
+        "downloads": 24225
       },
       {
         "id": "Comfy-Org/Cosmos_Predict2_repackaged",
         "lastModified": "2025-08-05T15:41:17.000Z",
-        "downloads": 2080
+        "downloads": 1986
       },
       {
         "id": "Comfy-Org/lotus",
         "lastModified": "2025-08-05T15:40:35.000Z",
-        "downloads": 25442
+        "downloads": 25117
       },
       {
         "id": "Comfy-Org/Omnigen2_ComfyUI_repackaged",
         "lastModified": "2025-08-05T15:39:28.000Z",
-        "downloads": 22494
+        "downloads": 22253
       },
       {
         "id": "Comfy-Org/Real-ESRGAN_repackaged",
         "lastModified": "2025-08-05T15:32:13.000Z",
-        "downloads": 46414
+        "downloads": 45415
       },
       {
         "id": "Comfy-Org/hunyuan3D_2.0_repackaged",
         "lastModified": "2025-08-05T15:31:32.000Z",
-        "downloads": 41200
+        "downloads": 40376
       },
       {
         "id": "Comfy-Org/stable-audio-open-1.0_repackaged",
         "lastModified": "2025-08-05T15:30:58.000Z",
-        "downloads": 12221
+        "downloads": 12065
       },
       {
         "id": "Comfy-Org/Flux1-Redux-Dev",
         "lastModified": "2025-08-05T15:28:37.000Z",
-        "downloads": 6661
+        "downloads": 6526
       },
       {
         "id": "Comfy-Org/HiDream-I1_ComfyUI",
         "lastModified": "2025-08-05T15:28:06.000Z",
-        "downloads": 180081
+        "downloads": 178368
       }
     ],
     "black-forest-labs": [
       {
         "id": "black-forest-labs/FLUX.2-small-decoder",
         "lastModified": "2026-04-07T20:42:04.000Z",
-        "downloads": 195039
+        "downloads": 191656
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-9b-kv",
         "lastModified": "2026-03-12T16:13:40.000Z",
-        "downloads": 9784
+        "downloads": 9610
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-9b-kv-fp8",
         "lastModified": "2026-03-12T09:41:02.000Z",
-        "downloads": 53274
+        "downloads": 52055
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-4b-fp8",
         "lastModified": "2026-02-24T00:52:20.000Z",
-        "downloads": 59978
+        "downloads": 58871
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-9b-fp8",
         "lastModified": "2026-02-24T00:47:48.000Z",
-        "downloads": 28066
+        "downloads": 27521
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-4b-nvfp4",
         "lastModified": "2026-02-24T00:43:15.000Z",
-        "downloads": 568
+        "downloads": 563
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-9b-nvfp4",
         "lastModified": "2026-02-24T00:38:27.000Z",
-        "downloads": 557
+        "downloads": 553
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-4B",
         "lastModified": "2026-02-24T00:20:58.000Z",
-        "downloads": 158885
+        "downloads": 155896
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-base-9B",
         "lastModified": "2026-02-24T00:19:46.000Z",
-        "downloads": 74070
+        "downloads": 75556
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-4B",
         "lastModified": "2026-02-24T00:18:56.000Z",
-        "downloads": 393346
+        "downloads": 391207
       },
       {
         "id": "black-forest-labs/FLUX.2-klein-9B",
         "lastModified": "2026-02-24T00:17:09.000Z",
-        "downloads": 326071
+        "downloads": 326320
       },
       {
         "id": "black-forest-labs/FLUX.2-dev",
         "lastModified": "2026-02-17T15:56:06.000Z",
-        "downloads": 872533
+        "downloads": 899192
       },
       {
         "id": "black-forest-labs/FLUX.1-Kontext-dev",
         "lastModified": "2026-01-01T15:35:36.000Z",
-        "downloads": 214353
+        "downloads": 210032
       },
       {
         "id": "black-forest-labs/FLUX.1-Kontext-dev-onnx",
@@ -424,7 +424,7 @@
       {
         "id": "black-forest-labs/FLUX.1-Krea-dev",
         "lastModified": "2025-07-31T14:33:39.000Z",
-        "downloads": 22444
+        "downloads": 20307
       },
       {
         "id": "black-forest-labs/FLUX.1-Canny-dev-onnx",
@@ -444,32 +444,32 @@
       {
         "id": "black-forest-labs/FLUX.1-Canny-dev-lora",
         "lastModified": "2025-06-27T16:26:06.000Z",
-        "downloads": 27662
+        "downloads": 27256
       },
       {
         "id": "black-forest-labs/FLUX.1-Depth-dev-lora",
         "lastModified": "2025-06-27T16:25:44.000Z",
-        "downloads": 31749
+        "downloads": 30893
       },
       {
         "id": "black-forest-labs/FLUX.1-Canny-dev",
         "lastModified": "2025-06-27T16:25:19.000Z",
-        "downloads": 969
+        "downloads": 1642
       },
       {
         "id": "black-forest-labs/FLUX.1-Depth-dev",
         "lastModified": "2025-06-27T16:24:46.000Z",
-        "downloads": 1074
+        "downloads": 2057
       },
       {
         "id": "black-forest-labs/FLUX.1-Redux-dev",
         "lastModified": "2025-06-27T16:24:18.000Z",
-        "downloads": 7336
+        "downloads": 7251
       },
       {
         "id": "black-forest-labs/FLUX.1-Fill-dev",
         "lastModified": "2025-06-27T16:23:07.000Z",
-        "downloads": 217400
+        "downloads": 224126
       },
       {
         "id": "black-forest-labs/FLUX.1-schnell-onnx",
@@ -479,7 +479,7 @@
       {
         "id": "black-forest-labs/FLUX.1-schnell",
         "lastModified": "2024-08-16T14:37:56.000Z",
-        "downloads": 244402
+        "downloads": 238976
       }
     ],
     "Lightricks": [
@@ -491,7 +491,7 @@
       {
         "id": "Lightricks/LTX-2.3",
         "lastModified": "2026-07-09T11:12:53.000Z",
-        "downloads": 2132990
+        "downloads": 2108703
       },
       {
         "id": "Lightricks/LTX-2.3-22b-LoRA-Cinemagraph",
@@ -521,7 +521,7 @@
       {
         "id": "Lightricks/LTX-2.3-22b-IC-LoRA-Cross-Eyed",
         "lastModified": "2026-06-29T12:59:46.000Z",
-        "downloads": 1901
+        "downloads": 1794
       },
       {
         "id": "Lightricks/LTX-2.3-22b-IC-LoRA-Deblur",
@@ -551,12 +551,12 @@
       {
         "id": "Lightricks/LTX-2.3-22b-IC-LoRA-HDR",
         "lastModified": "2026-05-13T06:25:16.000Z",
-        "downloads": 3862
+        "downloads": 4673
       },
       {
         "id": "Lightricks/LTX-2.3-22b-IC-LoRA-LipDub",
         "lastModified": "2026-05-12T11:38:27.000Z",
-        "downloads": 4878
+        "downloads": 5772
       },
       {
         "id": "Lightricks/LTX-2.3-22b-IC-LoRA-Motion-Track-Control",
@@ -581,12 +581,12 @@
       {
         "id": "Lightricks/gemma-3-12b-it-qat-q4_0-unquantized",
         "lastModified": "2026-03-04T21:18:52.000Z",
-        "downloads": 31788
+        "downloads": 31348
       },
       {
         "id": "Lightricks/LTX-2",
         "lastModified": "2026-03-02T12:38:08.000Z",
-        "downloads": 460707
+        "downloads": 449624
       },
       {
         "id": "Lightricks/LTX-2-19b-IC-LoRA-Canny-Control",
@@ -641,47 +641,47 @@
       {
         "id": "Lightricks/LTX-Video-0.9.8-13B-distilled",
         "lastModified": "2025-07-17T15:03:34.000Z",
-        "downloads": 2417
+        "downloads": 2365
       },
       {
         "id": "Lightricks/LTX-Video",
         "lastModified": "2025-07-16T14:32:35.000Z",
-        "downloads": 618459
+        "downloads": 612118
       },
       {
         "id": "Lightricks/LTX-Video-ICLoRA-detailer-13b-0.9.8",
         "lastModified": "2025-07-16T14:31:02.000Z",
-        "downloads": 30075
+        "downloads": 29730
       },
       {
         "id": "Lightricks/LTX-Video-ICLoRA-pose-13b-0.9.7",
         "lastModified": "2025-07-08T20:14:23.000Z",
-        "downloads": 458
+        "downloads": 416
       },
       {
         "id": "Lightricks/LTX-Video-ICLoRA-depth-13b-0.9.7",
         "lastModified": "2025-07-08T11:03:18.000Z",
-        "downloads": 349
+        "downloads": 302
       },
       {
         "id": "Lightricks/LTX-Video-0.9.7-distilled",
         "lastModified": "2025-07-08T10:13:57.000Z",
-        "downloads": 1728
+        "downloads": 1649
       },
       {
         "id": "Lightricks/LTX-Video-0.9.7-dev",
         "lastModified": "2025-07-08T10:13:53.000Z",
-        "downloads": 902
+        "downloads": 850
       },
       {
         "id": "Lightricks/ltxv-spatial-upscaler-0.9.7",
         "lastModified": "2025-07-08T10:13:49.000Z",
-        "downloads": 345
+        "downloads": 347
       },
       {
         "id": "Lightricks/LTX-Video-ICLoRA-canny-13b-0.9.7",
         "lastModified": "2025-07-08T10:11:07.000Z",
-        "downloads": 305
+        "downloads": 304
       },
       {
         "id": "Lightricks/LTXV-LoRAs",
@@ -691,12 +691,12 @@
       {
         "id": "Lightricks/LTX-Video-0.9.1",
         "lastModified": "2025-05-06T16:12:12.000Z",
-        "downloads": 223
+        "downloads": 219
       },
       {
         "id": "Lightricks/LTX-Video-0.9.5",
         "lastModified": "2025-05-06T16:11:26.000Z",
-        "downloads": 2582
+        "downloads": 2647
       },
       {
         "id": "Lightricks/LTX-Video-2B-0.9.6-Distilled-04-25",
@@ -743,7 +743,7 @@
       {
         "id": "nunchaku-ai/nunchaku-shuttle-jaguar",
         "lastModified": "2025-11-16T02:24:17.000Z",
-        "downloads": 499
+        "downloads": 500
       },
       {
         "id": "nunchaku-ai/nunchaku-test-models",
@@ -755,62 +755,62 @@
       {
         "id": "krea/Krea-2-Raw",
         "lastModified": "2026-06-23T16:23:26.000Z",
-        "downloads": 156195
+        "downloads": 158363
       },
       {
         "id": "krea/Krea-2-Turbo",
         "lastModified": "2026-06-23T16:23:00.000Z",
-        "downloads": 206385
+        "downloads": 207966
       },
       {
         "id": "krea/Krea-2-LoRA-neondrip",
         "lastModified": "2026-06-23T10:26:04.000Z",
-        "downloads": 7257
+        "downloads": 7264
       },
       {
         "id": "krea/Krea-2-LoRA-dotmatrix",
         "lastModified": "2026-06-23T10:20:38.000Z",
-        "downloads": 2281
+        "downloads": 2292
       },
       {
         "id": "krea/Krea-2-LoRA-darkbrush",
         "lastModified": "2026-06-23T10:17:50.000Z",
-        "downloads": 5588
+        "downloads": 5711
       },
       {
         "id": "krea/Krea-2-LoRA-sunsetblur",
         "lastModified": "2026-06-23T10:17:03.000Z",
-        "downloads": 1821
+        "downloads": 1832
       },
       {
         "id": "krea/Krea-2-LoRA-rainywindow",
         "lastModified": "2026-06-23T10:17:03.000Z",
-        "downloads": 2314
+        "downloads": 2319
       },
       {
         "id": "krea/Krea-2-LoRA-kidsdrawing",
         "lastModified": "2026-06-23T10:17:02.000Z",
-        "downloads": 2535
+        "downloads": 2542
       },
       {
         "id": "krea/Krea-2-LoRA-vintagetarot",
         "lastModified": "2026-06-23T10:17:02.000Z",
-        "downloads": 2341
+        "downloads": 2354
       },
       {
         "id": "krea/Krea-2-LoRA-softwatercolor",
         "lastModified": "2026-06-23T09:51:57.000Z",
-        "downloads": 2837
+        "downloads": 2852
       },
       {
         "id": "krea/Krea-2-LoRA-retroanime",
         "lastModified": "2026-06-23T09:51:56.000Z",
-        "downloads": 4949
+        "downloads": 4973
       },
       {
         "id": "krea/krea-realtime-video",
         "lastModified": "2025-11-14T04:58:30.000Z",
-        "downloads": 355
+        "downloads": 365
       },
       {
         "id": "krea/sf_14b",
@@ -832,32 +832,32 @@
       {
         "id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
         "lastModified": "2026-06-26T08:42:38.000Z",
-        "downloads": 12637
+        "downloads": 13076
       },
       {
         "id": "Qwen/Qwen3-ASR-0.6B-hf",
         "lastModified": "2026-06-26T08:39:37.000Z",
-        "downloads": 83640
+        "downloads": 87177
       },
       {
         "id": "Qwen/Qwen3-ASR-1.7B-hf",
         "lastModified": "2026-06-26T08:36:05.000Z",
-        "downloads": 42736
+        "downloads": 45832
       },
       {
         "id": "Qwen/Qwen-AgentWorld-35B-A3B",
         "lastModified": "2026-06-25T07:24:16.000Z",
-        "downloads": 103533
+        "downloads": 104365
       },
       {
         "id": "Qwen/Qwen-Image-Bench",
         "lastModified": "2026-05-28T08:07:27.000Z",
-        "downloads": 14722
+        "downloads": 13710
       },
       {
         "id": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50",
         "lastModified": "2026-05-13T12:19:26.000Z",
-        "downloads": 470
+        "downloads": 474
       },
       {
         "id": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_100",
@@ -877,32 +877,32 @@
       {
         "id": "Qwen/SAE-Res-Qwen3.5-35B-A3B-Base-W32K-L0_50",
         "lastModified": "2026-05-13T12:19:14.000Z",
-        "downloads": 68
+        "downloads": 66
       },
       {
         "id": "Qwen/SAE-Res-Qwen3.5-2B-Base-W32K-L0_50",
         "lastModified": "2026-05-13T12:19:08.000Z",
-        "downloads": 90
+        "downloads": 89
       },
       {
         "id": "Qwen/SAE-Res-Qwen3.5-2B-Base-W32K-L0_100",
         "lastModified": "2026-05-13T12:19:05.000Z",
-        "downloads": 73
+        "downloads": 72
       },
       {
         "id": "Qwen/SAE-Res-Qwen3.5-27B-W80K-L0_50",
         "lastModified": "2026-05-13T12:19:02.000Z",
-        "downloads": 3668
+        "downloads": 3893
       },
       {
         "id": "Qwen/SAE-Res-Qwen3-30B-A3B-Base-W32K-L0_50",
         "lastModified": "2026-05-13T12:18:56.000Z",
-        "downloads": 33
+        "downloads": 31
       },
       {
         "id": "Qwen/SAE-Res-Qwen3-30B-A3B-Base-W128K-L0_100",
         "lastModified": "2026-05-13T12:18:52.000Z",
-        "downloads": 37
+        "downloads": 38
       },
       {
         "id": "Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50",
@@ -922,519 +922,519 @@
       {
         "id": "Qwen/SAE-Res-Qwen3.5-35B-A3B-Base-W128K-L0_100",
         "lastModified": "2026-05-13T09:43:12.000Z",
-        "downloads": 51
+        "downloads": 50
       },
       {
         "id": "Qwen/WebWorld-14B",
         "lastModified": "2026-05-08T12:11:59.000Z",
-        "downloads": 290
+        "downloads": 278
       },
       {
         "id": "Qwen/WebWorld-32B",
         "lastModified": "2026-05-08T12:11:35.000Z",
-        "downloads": 411
+        "downloads": 385
       },
       {
         "id": "Qwen/WebWorld-8B",
         "lastModified": "2026-05-08T12:10:29.000Z",
-        "downloads": 990
+        "downloads": 983
       },
       {
         "id": "Qwen/Qwen3.5-122B-A10B-GPTQ-Int4",
         "lastModified": "2026-04-24T05:56:30.000Z",
-        "downloads": 249737
+        "downloads": 248345
       },
       {
         "id": "Qwen/Qwen3.5-122B-A10B-FP8",
         "lastModified": "2026-04-24T05:56:01.000Z",
-        "downloads": 1032185
+        "downloads": 1021480
       },
       {
         "id": "Qwen/Qwen3.5-397B-A17B-GPTQ-Int4",
         "lastModified": "2026-04-24T05:52:53.000Z",
-        "downloads": 25514
+        "downloads": 24353
       },
       {
         "id": "Qwen/Qwen3.5-397B-A17B",
         "lastModified": "2026-04-24T05:51:23.000Z",
-        "downloads": 411485
+        "downloads": 401166
       },
       {
         "id": "Qwen/Qwen3.5-397B-A17B-FP8",
         "lastModified": "2026-04-24T05:50:39.000Z",
-        "downloads": 685674
+        "downloads": 681519
       },
       {
         "id": "Qwen/Qwen3.5-122B-A10B",
         "lastModified": "2026-04-24T03:55:23.000Z",
-        "downloads": 690845
+        "downloads": 698796
       },
       {
         "id": "Qwen/Qwen3.5-27B",
         "lastModified": "2026-04-24T02:54:49.000Z",
-        "downloads": 2707335
+        "downloads": 2643530
       },
       {
         "id": "Qwen/Qwen3.6-35B-A3B",
         "lastModified": "2026-04-24T02:53:42.000Z",
-        "downloads": 6346383
+        "downloads": 6172810
       },
       {
         "id": "Qwen/Qwen3.6-35B-A3B-FP8",
         "lastModified": "2026-04-24T02:39:23.000Z",
-        "downloads": 7727849
+        "downloads": 7608285
       },
       {
         "id": "Qwen/Qwen3.6-27B-FP8",
         "lastModified": "2026-04-24T02:39:18.000Z",
-        "downloads": 5768865
+        "downloads": 5712867
       },
       {
         "id": "Qwen/Qwen3.6-27B",
         "lastModified": "2026-04-24T02:39:16.000Z",
-        "downloads": 5395520
+        "downloads": 5314191
       },
       {
         "id": "Qwen/Qwen3.5-35B-A3B-GPTQ-Int4",
         "lastModified": "2026-04-24T02:38:59.000Z",
-        "downloads": 801978
+        "downloads": 757996
       },
       {
         "id": "Qwen/Qwen3.5-27B-GPTQ-Int4",
         "lastModified": "2026-04-24T02:38:57.000Z",
-        "downloads": 94201
+        "downloads": 56881
       },
       {
         "id": "Qwen/Qwen3.5-35B-A3B-FP8",
         "lastModified": "2026-04-24T02:38:49.000Z",
-        "downloads": 969896
+        "downloads": 929789
       },
       {
         "id": "Qwen/Qwen3.5-27B-FP8",
         "lastModified": "2026-04-24T02:38:46.000Z",
-        "downloads": 966392
+        "downloads": 943535
       },
       {
         "id": "Qwen/Qwen3.5-35B-A3B",
         "lastModified": "2026-04-24T02:38:38.000Z",
-        "downloads": 2435360
+        "downloads": 2395485
       },
       {
         "id": "Qwen/Qwen3.5-9B-Base",
         "lastModified": "2026-04-23T12:04:39.000Z",
-        "downloads": 379299
+        "downloads": 381827
       },
       {
         "id": "Qwen/Qwen3.5-35B-A3B-Base",
         "lastModified": "2026-04-23T11:21:45.000Z",
-        "downloads": 120378
+        "downloads": 120990
       },
       {
         "id": "Qwen/Qwen3.5-0.8B-Base",
         "lastModified": "2026-04-23T11:14:09.000Z",
-        "downloads": 481489
+        "downloads": 493889
       },
       {
         "id": "Qwen/Qwen3.5-2B-Base",
         "lastModified": "2026-04-23T11:13:46.000Z",
-        "downloads": 243306
+        "downloads": 236079
       },
       {
         "id": "Qwen/Qwen3.5-4B-Base",
         "lastModified": "2026-04-23T11:13:30.000Z",
-        "downloads": 202082
+        "downloads": 198685
       },
       {
         "id": "Qwen/Qwen3-Embedding-0.6B",
         "lastModified": "2026-04-20T02:45:58.000Z",
-        "downloads": 10599523
+        "downloads": 10298736
       },
       {
         "id": "Qwen/Qwen3-Reranker-8B",
         "lastModified": "2026-04-16T08:56:16.000Z",
-        "downloads": 843984
+        "downloads": 813981
       },
       {
         "id": "Qwen/Qwen3-Reranker-4B",
         "lastModified": "2026-04-16T08:56:07.000Z",
-        "downloads": 2253186
+        "downloads": 2215942
       },
       {
         "id": "Qwen/Qwen3-Reranker-0.6B",
         "lastModified": "2026-04-16T08:55:59.000Z",
-        "downloads": 2742199
+        "downloads": 2678032
       },
       {
         "id": "Qwen/Qwen3-VL-Reranker-8B",
         "lastModified": "2026-04-16T08:55:43.000Z",
-        "downloads": 113747
+        "downloads": 90591
       },
       {
         "id": "Qwen/Qwen3-VL-Reranker-2B",
         "lastModified": "2026-04-16T08:55:33.000Z",
-        "downloads": 327607
+        "downloads": 325404
       },
       {
         "id": "Qwen/Qwen3-VL-Embedding-8B",
         "lastModified": "2026-04-16T08:55:18.000Z",
-        "downloads": 1678416
+        "downloads": 1695957
       },
       {
         "id": "Qwen/Qwen3-VL-Embedding-2B",
         "lastModified": "2026-04-16T08:54:25.000Z",
-        "downloads": 1262980
+        "downloads": 1262869
       },
       {
         "id": "Qwen/Qwen3.5-0.8B",
         "lastModified": "2026-03-02T11:26:58.000Z",
-        "downloads": 2774782
+        "downloads": 2736550
       },
       {
         "id": "Qwen/Qwen3.5-2B",
         "lastModified": "2026-03-02T11:26:29.000Z",
-        "downloads": 2192698
+        "downloads": 2175835
       },
       {
         "id": "Qwen/Qwen3.5-4B",
         "lastModified": "2026-03-02T00:52:52.000Z",
-        "downloads": 6715798
+        "downloads": 6591518
       },
       {
         "id": "Qwen/Qwen3.5-9B",
         "lastModified": "2026-03-02T00:51:43.000Z",
-        "downloads": 9369355
+        "downloads": 9228130
       },
       {
         "id": "Qwen/Qwen3-Coder-Next-GGUF",
         "lastModified": "2026-02-04T04:26:16.000Z",
-        "downloads": 16413
+        "downloads": 16026
       },
       {
         "id": "Qwen/Qwen3-Coder-Next",
         "lastModified": "2026-02-03T16:16:38.000Z",
-        "downloads": 1060905
+        "downloads": 1029644
       },
       {
         "id": "Qwen/Qwen3-Coder-Next-Base",
         "lastModified": "2026-02-03T14:14:04.000Z",
-        "downloads": 1306
+        "downloads": 1307
       },
       {
         "id": "Qwen/Qwen3-Coder-Next-FP8",
         "lastModified": "2026-02-03T14:13:28.000Z",
-        "downloads": 2932017
+        "downloads": 2873515
       },
       {
         "id": "Qwen/Qwen3-ForcedAligner-0.6B",
         "lastModified": "2026-01-30T03:00:55.000Z",
-        "downloads": 444709
+        "downloads": 429224
       },
       {
         "id": "Qwen/Qwen3-ASR-0.6B",
         "lastModified": "2026-01-30T03:00:21.000Z",
-        "downloads": 1249618
+        "downloads": 1247883
       },
       {
         "id": "Qwen/Qwen3-ASR-1.7B",
         "lastModified": "2026-01-30T03:00:12.000Z",
-        "downloads": 1511621
+        "downloads": 1490625
       },
       {
         "id": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
         "lastModified": "2026-01-29T08:04:19.000Z",
-        "downloads": 713662
+        "downloads": 704375
       },
       {
         "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
         "lastModified": "2026-01-29T08:01:51.000Z",
-        "downloads": 1525155
+        "downloads": 1499932
       },
       {
         "id": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
         "lastModified": "2026-01-29T08:01:28.000Z",
-        "downloads": 78021
+        "downloads": 71317
       },
       {
         "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
         "lastModified": "2026-01-29T08:01:19.000Z",
-        "downloads": 380684
+        "downloads": 378762
       },
       {
         "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
         "lastModified": "2026-01-29T08:00:54.000Z",
-        "downloads": 2471302
+        "downloads": 2440785
       },
       {
         "id": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
         "lastModified": "2026-01-23T05:25:33.000Z",
-        "downloads": 2153623
+        "downloads": 2084338
       },
       {
         "id": "Qwen/Qwen-Image-2512",
         "lastModified": "2025-12-31T09:47:56.000Z",
-        "downloads": 48134
+        "downloads": 47935
       },
       {
         "id": "Qwen/Qwen-Image-Edit-2511",
         "lastModified": "2025-12-23T13:13:52.000Z",
-        "downloads": 209789
+        "downloads": 206414
       },
       {
         "id": "Qwen/Qwen-Image-Layered",
         "lastModified": "2025-12-19T09:11:18.000Z",
-        "downloads": 50020
+        "downloads": 48827
       },
       {
         "id": "Qwen/Qwen3-Next-80B-A3B-Instruct-GGUF",
         "lastModified": "2025-12-03T08:26:07.000Z",
-        "downloads": 2780
+        "downloads": 2793
       },
       {
         "id": "Qwen/Qwen3-Next-80B-A3B-Thinking-GGUF",
         "lastModified": "2025-12-03T08:24:52.000Z",
-        "downloads": 1396
+        "downloads": 1347
       },
       {
         "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
         "lastModified": "2025-12-03T08:20:23.000Z",
-        "downloads": 1567105
+        "downloads": 1508896
       },
       {
         "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
         "lastModified": "2025-12-03T08:05:17.000Z",
-        "downloads": 1706644
+        "downloads": 1746771
       },
       {
         "id": "Qwen/Qwen3-VL-32B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:23.000Z",
-        "downloads": 66270
+        "downloads": 65732
       },
       {
         "id": "Qwen/Qwen3-VL-2B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:22.000Z",
-        "downloads": 822
+        "downloads": 817
       },
       {
         "id": "Qwen/Qwen3-VL-4B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:21.000Z",
-        "downloads": 2604
+        "downloads": 2467
       },
       {
         "id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
         "lastModified": "2025-11-26T13:18:20.000Z",
-        "downloads": 96064
+        "downloads": 97651
       },
       {
         "id": "Qwen/Qwen3-VL-235B-A22B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:19.000Z",
-        "downloads": 77965
+        "downloads": 77802
       },
       {
         "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
         "lastModified": "2025-11-26T13:18:18.000Z",
-        "downloads": 1701614
+        "downloads": 1674147
       },
       {
         "id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
         "lastModified": "2025-11-26T13:18:17.000Z",
-        "downloads": 14887
+        "downloads": 14961
       },
       {
         "id": "Qwen/Qwen3-VL-8B-Instruct-FP8",
         "lastModified": "2025-11-26T13:18:16.000Z",
-        "downloads": 1528803
+        "downloads": 1574435
       },
       {
         "id": "Qwen/Qwen3-VL-8B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:15.000Z",
-        "downloads": 26834
+        "downloads": 26005
       },
       {
         "id": "Qwen/Qwen3-VL-8B-Thinking",
         "lastModified": "2025-11-26T13:18:14.000Z",
-        "downloads": 132983
+        "downloads": 132019
       },
       {
         "id": "Qwen/Qwen3-VL-30B-A3B-Instruct-FP8",
         "lastModified": "2025-11-26T13:18:10.000Z",
-        "downloads": 819935
+        "downloads": 822918
       },
       {
         "id": "Qwen/Qwen3-VL-30B-A3B-Thinking-FP8",
         "lastModified": "2025-11-26T13:18:07.000Z",
-        "downloads": 16833
+        "downloads": 18079
       },
       {
         "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
         "lastModified": "2025-11-26T13:18:04.000Z",
-        "downloads": 1002651
+        "downloads": 992099
       },
       {
         "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
         "lastModified": "2025-11-26T13:18:00.000Z",
-        "downloads": 17172
+        "downloads": 16790
       },
       {
         "id": "Qwen/Qwen3Guard-Gen-8B",
         "lastModified": "2025-11-07T08:11:03.000Z",
-        "downloads": 53093
+        "downloads": 51651
       },
       {
         "id": "Qwen/Qwen3Guard-Gen-0.6B",
         "lastModified": "2025-11-07T08:10:53.000Z",
-        "downloads": 150087
+        "downloads": 147234
       },
       {
         "id": "Qwen/Qwen3Guard-Gen-4B",
         "lastModified": "2025-11-07T08:10:44.000Z",
-        "downloads": 22634
+        "downloads": 29248
       },
       {
         "id": "Qwen/Qwen3Guard-Stream-0.6B",
         "lastModified": "2025-11-07T07:36:26.000Z",
-        "downloads": 1622
+        "downloads": 1599
       },
       {
         "id": "Qwen/Qwen3Guard-Stream-8B",
         "lastModified": "2025-11-07T07:35:13.000Z",
-        "downloads": 2117
+        "downloads": 2110
       },
       {
         "id": "Qwen/Qwen3Guard-Stream-4B",
         "lastModified": "2025-11-07T07:34:37.000Z",
-        "downloads": 318
+        "downloads": 315
       },
       {
         "id": "Qwen/Qwen3-VL-32B-Thinking-GGUF",
         "lastModified": "2025-11-01T03:24:46.000Z",
-        "downloads": 1616
+        "downloads": 1575
       },
       {
         "id": "Qwen/Qwen3-VL-8B-Thinking-GGUF",
         "lastModified": "2025-11-01T03:23:55.000Z",
-        "downloads": 4031
+        "downloads": 3954
       },
       {
         "id": "Qwen/Qwen3-VL-4B-Thinking-GGUF",
         "lastModified": "2025-11-01T03:23:09.000Z",
-        "downloads": 2337
+        "downloads": 2220
       },
       {
         "id": "Qwen/Qwen3-VL-2B-Thinking-GGUF",
         "lastModified": "2025-11-01T03:22:14.000Z",
-        "downloads": 1321
+        "downloads": 1337
       },
       {
         "id": "Qwen/Qwen3-VL-2B-Instruct-GGUF",
         "lastModified": "2025-11-01T03:21:20.000Z",
-        "downloads": 85451
+        "downloads": 83785
       }
     ],
     "unsloth": [
       {
         "id": "unsloth/Ornith-1.0-397B-GGUF",
         "lastModified": "2026-07-18T05:47:20.000Z",
-        "downloads": 121
+        "downloads": 980
       },
       {
         "id": "unsloth/Ornith-1.0-397B",
         "lastModified": "2026-07-18T05:21:13.000Z",
-        "downloads": 241
+        "downloads": 259
       },
       {
         "id": "unsloth/Ornith-1.0-9B",
         "lastModified": "2026-07-18T05:21:10.000Z",
-        "downloads": 215
+        "downloads": 234
       },
       {
         "id": "unsloth/Ornith-1.0-35B",
         "lastModified": "2026-07-18T05:21:07.000Z",
-        "downloads": 242
+        "downloads": 261
       },
       {
         "id": "unsloth/Ornith-1.0-9B-GGUF",
         "lastModified": "2026-07-18T05:20:59.000Z",
-        "downloads": 1905
+        "downloads": 4002
       },
       {
         "id": "unsloth/Ornith-1.0-35B-GGUF",
         "lastModified": "2026-07-18T05:20:56.000Z",
-        "downloads": 3763
+        "downloads": 9420
       },
       {
         "id": "unsloth/gemma-4-31B-it-GGUF",
         "lastModified": "2026-07-17T13:09:42.000Z",
-        "downloads": 502588
+        "downloads": 493405
       },
       {
         "id": "unsloth/gemma-4-26B-A4B-it-GGUF",
         "lastModified": "2026-07-17T13:00:49.000Z",
-        "downloads": 1513752
+        "downloads": 1491605
       },
       {
         "id": "unsloth/gemma-4-12b-it-GGUF",
         "lastModified": "2026-07-17T12:52:56.000Z",
-        "downloads": 654915
+        "downloads": 640422
       },
       {
         "id": "unsloth/gemma-4-E4B-it-GGUF",
         "lastModified": "2026-07-17T12:49:21.000Z",
-        "downloads": 518226
+        "downloads": 504402
       },
       {
         "id": "unsloth/gemma-4-E2B-it-GGUF",
         "lastModified": "2026-07-17T12:46:32.000Z",
-        "downloads": 454680
+        "downloads": 439210
       },
       {
         "id": "unsloth/gemma-4-31B-it-qat-GGUF",
         "lastModified": "2026-07-17T12:44:49.000Z",
-        "downloads": 287625
+        "downloads": 284396
       },
       {
         "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
         "lastModified": "2026-07-17T12:43:18.000Z",
-        "downloads": 557133
+        "downloads": 529138
       },
       {
         "id": "unsloth/gemma-4-12B-it-qat-GGUF",
         "lastModified": "2026-07-17T12:37:30.000Z",
-        "downloads": 237919
+        "downloads": 231987
       },
       {
         "id": "unsloth/gemma-4-E4B-it-qat-GGUF",
         "lastModified": "2026-07-17T12:37:02.000Z",
-        "downloads": 166496
+        "downloads": 172753
       },
       {
         "id": "unsloth/gemma-4-E2B-it-qat-GGUF",
         "lastModified": "2026-07-17T12:36:37.000Z",
-        "downloads": 95302
+        "downloads": 93850
       },
       {
         "id": "unsloth/gemma-4-E4B-it-qat-mobile-GGUF",
         "lastModified": "2026-07-17T12:36:22.000Z",
-        "downloads": 29973
+        "downloads": 28948
       },
       {
         "id": "unsloth/gemma-4-E2B-it-qat-mobile-GGUF",
         "lastModified": "2026-07-17T12:36:06.000Z",
-        "downloads": 44108
+        "downloads": 43514
       },
       {
         "id": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
         "lastModified": "2026-07-17T11:55:15.000Z",
-        "downloads": 406840
+        "downloads": 401629
       },
       {
         "id": "unsloth/gemma-4-E4B-it-qat-w4a16",
         "lastModified": "2026-07-17T11:55:13.000Z",
-        "downloads": 3100
+        "downloads": 2936
       },
       {
         "id": "unsloth/gemma-4-E4B-it-qat-q4_0-unquantized",
         "lastModified": "2026-07-17T11:55:11.000Z",
-        "downloads": 1736
+        "downloads": 1780
       },
       {
         "id": "unsloth/gemma-4-E4B-it-qat-mobile",
@@ -1444,102 +1444,102 @@
       {
         "id": "unsloth/gemma-4-E4B-it-UD-MLX-4bit",
         "lastModified": "2026-07-17T11:55:07.000Z",
-        "downloads": 1141
+        "downloads": 1069
       },
       {
         "id": "unsloth/gemma-4-E4B-it-MLX-8bit",
         "lastModified": "2026-07-17T11:55:06.000Z",
-        "downloads": 1122
+        "downloads": 1099
       },
       {
         "id": "unsloth/gemma-4-E4B-it",
         "lastModified": "2026-07-17T11:55:04.000Z",
-        "downloads": 114228
+        "downloads": 113609
       },
       {
         "id": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
         "lastModified": "2026-07-17T11:55:02.000Z",
-        "downloads": 84802
+        "downloads": 81752
       },
       {
         "id": "unsloth/gemma-4-E2B-it-qat-w4a16",
         "lastModified": "2026-07-17T11:55:01.000Z",
-        "downloads": 1837
+        "downloads": 1826
       },
       {
         "id": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
         "lastModified": "2026-07-17T11:55:00.000Z",
-        "downloads": 3961
+        "downloads": 3898
       },
       {
         "id": "unsloth/gemma-4-E2B-it-qat-mobile",
         "lastModified": "2026-07-17T11:54:58.000Z",
-        "downloads": 868
+        "downloads": 854
       },
       {
         "id": "unsloth/gemma-4-E2B-it-UD-MLX-4bit",
         "lastModified": "2026-07-17T11:54:57.000Z",
-        "downloads": 1273
+        "downloads": 1214
       },
       {
         "id": "unsloth/gemma-4-E2B-it-MLX-8bit",
         "lastModified": "2026-07-17T11:54:55.000Z",
-        "downloads": 590
+        "downloads": 576
       },
       {
         "id": "unsloth/gemma-4-E2B-it",
         "lastModified": "2026-07-17T11:54:53.000Z",
-        "downloads": 64628
+        "downloads": 62310
       },
       {
         "id": "unsloth/gemma-4-31b-it-UD-MLX-4bit",
         "lastModified": "2026-07-17T11:54:51.000Z",
-        "downloads": 855
+        "downloads": 839
       },
       {
         "id": "unsloth/gemma-4-31b-it-UD-MLX-3bit",
         "lastModified": "2026-07-17T11:54:50.000Z",
-        "downloads": 47
+        "downloads": 49
       },
       {
         "id": "unsloth/gemma-4-31b-it-MLX-8bit",
         "lastModified": "2026-07-17T11:54:48.000Z",
-        "downloads": 1074
+        "downloads": 1049
       },
       {
         "id": "unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
         "lastModified": "2026-07-17T11:54:46.000Z",
-        "downloads": 531799
+        "downloads": 513636
       },
       {
         "id": "unsloth/gemma-4-31B-it-qat-w4a16",
         "lastModified": "2026-07-17T11:54:44.000Z",
-        "downloads": 115560
+        "downloads": 115220
       },
       {
         "id": "unsloth/gemma-4-31B-it-qat-q4_0-unquantized",
         "lastModified": "2026-07-17T11:54:42.000Z",
-        "downloads": 780
+        "downloads": 837
       },
       {
         "id": "unsloth/gemma-4-31B-it",
         "lastModified": "2026-07-17T11:54:40.000Z",
-        "downloads": 26315
+        "downloads": 25630
       },
       {
         "id": "unsloth/gemma-4-26b-a4b-it-UD-MLX-4bit",
         "lastModified": "2026-07-17T11:54:38.000Z",
-        "downloads": 2139
+        "downloads": 2095
       },
       {
         "id": "unsloth/gemma-4-26b-a4b-it-UD-MLX-3bit",
         "lastModified": "2026-07-17T11:54:36.000Z",
-        "downloads": 480
+        "downloads": 468
       },
       {
         "id": "unsloth/gemma-4-26b-a4b-it-MLX-8bit",
         "lastModified": "2026-07-17T11:54:33.000Z",
-        "downloads": 849
+        "downloads": 847
       },
       {
         "id": "unsloth/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
@@ -1549,22 +1549,22 @@
       {
         "id": "unsloth/gemma-4-26B-A4B-it",
         "lastModified": "2026-07-17T11:54:30.000Z",
-        "downloads": 47159
+        "downloads": 45922
       },
       {
         "id": "unsloth/gemma-4-12B-it-qat-w4a16",
         "lastModified": "2026-07-17T11:54:28.000Z",
-        "downloads": 3103
+        "downloads": 2902
       },
       {
         "id": "unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
         "lastModified": "2026-07-17T11:54:27.000Z",
-        "downloads": 3833
+        "downloads": 3607
       },
       {
         "id": "unsloth/gemma-4-12b-it",
         "lastModified": "2026-07-17T11:54:25.000Z",
-        "downloads": 148967
+        "downloads": 148064
       },
       {
         "id": "unsloth/Qwen-Image-2512-FP8",
@@ -1574,47 +1574,47 @@
       {
         "id": "unsloth/inkling-GGUF",
         "lastModified": "2026-07-16T13:16:01.000Z",
-        "downloads": 6461
+        "downloads": 6771
       },
       {
         "id": "unsloth/inkling-NVFP4",
         "lastModified": "2026-07-16T13:15:45.000Z",
-        "downloads": 157
+        "downloads": 165
       },
       {
         "id": "unsloth/gemma-4-E4B-it-NVFP4",
         "lastModified": "2026-07-15T19:21:58.000Z",
-        "downloads": 2798
+        "downloads": 4170
       },
       {
         "id": "unsloth/gemma-4-E2B-it-NVFP4",
         "lastModified": "2026-07-15T19:21:55.000Z",
-        "downloads": 1411
+        "downloads": 1565
       },
       {
         "id": "unsloth/gemma-4-31B-it-NVFP4",
         "lastModified": "2026-07-15T19:18:36.000Z",
-        "downloads": 7502
+        "downloads": 8277
       },
       {
         "id": "unsloth/gemma-4-12b-it-NVFP4",
         "lastModified": "2026-07-15T19:18:34.000Z",
-        "downloads": 10384
+        "downloads": 11251
       },
       {
         "id": "unsloth/gemma-4-26B-A4B-it-NVFP4",
         "lastModified": "2026-07-15T18:00:47.000Z",
-        "downloads": 14382
+        "downloads": 15039
       },
       {
         "id": "unsloth/Qwen3.5-122B-A10B-NVFP4",
         "lastModified": "2026-07-15T09:57:17.000Z",
-        "downloads": 2302
+        "downloads": 2624
       },
       {
         "id": "unsloth/GLM-4.7-Flash-NVFP4",
         "lastModified": "2026-07-15T09:57:15.000Z",
-        "downloads": 901
+        "downloads": 1187
       },
       {
         "id": "unsloth/whisper-base",
@@ -1629,52 +1629,52 @@
       {
         "id": "unsloth/Qwen3.6-27B-NVFP4",
         "lastModified": "2026-07-12T13:49:13.000Z",
-        "downloads": 2064590
+        "downloads": 2072119
       },
       {
         "id": "unsloth/Qwen3.6-35B-A3B-NVFP4",
         "lastModified": "2026-07-12T13:48:49.000Z",
-        "downloads": 557644
+        "downloads": 582352
       },
       {
         "id": "unsloth/Qwen3.6-35B-A3B-NVFP4-Fast",
         "lastModified": "2026-07-12T13:48:21.000Z",
-        "downloads": 233663
+        "downloads": 238806
       },
       {
         "id": "unsloth/DeepSeek-V4-Flash-GGUF",
         "lastModified": "2026-07-09T12:39:39.000Z",
-        "downloads": 73942
+        "downloads": 79187
       },
       {
         "id": "unsloth/DeepSeek-V4-Flash",
         "lastModified": "2026-07-06T15:38:34.000Z",
-        "downloads": 50114
+        "downloads": 50103
       },
       {
         "id": "unsloth/diffusiongemma-26B-A4B-it-GGUF",
         "lastModified": "2026-07-04T09:04:12.000Z",
-        "downloads": 105080
+        "downloads": 95870
       },
       {
         "id": "unsloth/diffusiongemma-26B-A4B-it",
         "lastModified": "2026-07-04T09:00:28.000Z",
-        "downloads": 22964
+        "downloads": 12220
       },
       {
         "id": "unsloth/LFM2.5-230M-GGUF",
         "lastModified": "2026-06-25T14:34:40.000Z",
-        "downloads": 13073
+        "downloads": 13117
       },
       {
         "id": "unsloth/LFM2.5-230M",
         "lastModified": "2026-06-25T14:22:29.000Z",
-        "downloads": 18631
+        "downloads": 18679
       },
       {
         "id": "unsloth/Qwen-AgentWorld-35B-A3B-GGUF",
         "lastModified": "2026-06-25T05:51:07.000Z",
-        "downloads": 670930
+        "downloads": 678322
       },
       {
         "id": "unsloth/Qwen-AgentWorld-35B-A3B",
@@ -1684,67 +1684,67 @@
       {
         "id": "unsloth/GLM-5.2-GGUF",
         "lastModified": "2026-06-23T15:18:23.000Z",
-        "downloads": 480497
+        "downloads": 471365
       },
       {
         "id": "unsloth/Kimi-K2.7-Code-GGUF",
         "lastModified": "2026-06-19T10:51:39.000Z",
-        "downloads": 401122
+        "downloads": 398597
       },
       {
         "id": "unsloth/GLM-5.2-FP8",
         "lastModified": "2026-06-17T13:00:18.000Z",
-        "downloads": 5283
+        "downloads": 2290
       },
       {
         "id": "unsloth/GLM-5.2",
         "lastModified": "2026-06-17T00:23:47.000Z",
-        "downloads": 1852
+        "downloads": 1810
       },
       {
         "id": "unsloth/DeepSeek-OCR-2",
         "lastModified": "2026-06-16T03:37:41.000Z",
-        "downloads": 4319
+        "downloads": 4151
       },
       {
         "id": "unsloth/DeepSeek-OCR",
         "lastModified": "2026-06-16T03:08:16.000Z",
-        "downloads": 818
+        "downloads": 803
       },
       {
         "id": "unsloth/MiniMax-M3-GGUF",
         "lastModified": "2026-06-15T01:57:42.000Z",
-        "downloads": 21550
+        "downloads": 20187
       },
       {
         "id": "unsloth/Kimi-K2.7-Code",
         "lastModified": "2026-06-13T07:32:12.000Z",
-        "downloads": 346
+        "downloads": 328
       },
       {
         "id": "unsloth/MiniMax-M3",
         "lastModified": "2026-06-12T14:42:55.000Z",
-        "downloads": 140
+        "downloads": 130
       },
       {
         "id": "unsloth/North-Mini-Code-1.0-GGUF",
         "lastModified": "2026-06-10T12:34:56.000Z",
-        "downloads": 46201
+        "downloads": 44466
       },
       {
         "id": "unsloth/North-Mini-Code-1.0",
         "lastModified": "2026-06-10T02:43:10.000Z",
-        "downloads": 169
+        "downloads": 166
       },
       {
         "id": "unsloth/bge-small-en-v1.5-GGUF",
         "lastModified": "2026-06-09T11:00:55.000Z",
-        "downloads": 257804
+        "downloads": 254810
       },
       {
         "id": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
         "lastModified": "2026-06-04T16:47:22.000Z",
-        "downloads": 10619
+        "downloads": 10260
       },
       {
         "id": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base",
@@ -1764,194 +1764,194 @@
       {
         "id": "unsloth/gemma-4-12b",
         "lastModified": "2026-06-03T16:03:14.000Z",
-        "downloads": 21855
+        "downloads": 21556
       },
       {
         "id": "unsloth/bge-small-en-v1.5",
         "lastModified": "2026-06-01T10:03:06.000Z",
-        "downloads": 161213
+        "downloads": 153948
       },
       {
         "id": "unsloth/LFM2.5-8B-A1B-GGUF",
         "lastModified": "2026-05-30T11:13:02.000Z",
-        "downloads": 19346
+        "downloads": 18853
       },
       {
         "id": "unsloth/LFM2.5-8B-A1B",
         "lastModified": "2026-05-30T10:13:04.000Z",
-        "downloads": 1798
+        "downloads": 1373
       },
       {
         "id": "unsloth/Step-3.7-Flash-GGUF",
         "lastModified": "2026-05-30T04:48:31.000Z",
-        "downloads": 27242
+        "downloads": 25582
       },
       {
         "id": "unsloth/Step-3.7-Flash",
         "lastModified": "2026-05-29T12:20:08.000Z",
-        "downloads": 20
+        "downloads": 21
       },
       {
         "id": "unsloth/Hy-MT2-7B-GGUF",
         "lastModified": "2026-05-29T11:22:05.000Z",
-        "downloads": 7651
+        "downloads": 7566
       },
       {
         "id": "unsloth/Hy-MT2-1.8B-GGUF",
         "lastModified": "2026-05-29T11:21:31.000Z",
-        "downloads": 1754
+        "downloads": 1704
       },
       {
         "id": "unsloth/Qwen3.6-27B-MTP-GGUF",
         "lastModified": "2026-05-26T08:45:52.000Z",
-        "downloads": 2900201
+        "downloads": 2886750
       },
       {
         "id": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
         "lastModified": "2026-05-20T08:48:17.000Z",
-        "downloads": 734953
+        "downloads": 646163
       },
       {
         "id": "unsloth/Qwen3.5-397B-A17B-MTP-GGUF",
         "lastModified": "2026-05-18T03:34:48.000Z",
-        "downloads": 4886
+        "downloads": 4610
       },
       {
         "id": "unsloth/Qwen3.5-122B-A10B-MTP-GGUF",
         "lastModified": "2026-05-18T03:29:50.000Z",
-        "downloads": 68855
+        "downloads": 67691
       },
       {
         "id": "unsloth/Qwen3.5-35B-A3B-MTP-GGUF",
         "lastModified": "2026-05-18T03:22:32.000Z",
-        "downloads": 4678
+        "downloads": 4564
       },
       {
         "id": "unsloth/Qwen3.5-397B-A17B",
         "lastModified": "2026-05-16T23:07:47.000Z",
-        "downloads": 83
+        "downloads": 85
       }
     ],
     "QuantStack": [
       {
         "id": "QuantStack/FLUX.2-Klein-9B-KV-GGUF",
         "lastModified": "2026-03-13T04:31:36.000Z",
-        "downloads": 7915
+        "downloads": 7777
       },
       {
         "id": "QuantStack/LTX-2-GGUF",
         "lastModified": "2026-01-09T15:00:00.000Z",
-        "downloads": 2865
+        "downloads": 2824
       },
       {
         "id": "QuantStack/ChronoEdit-14B-GGUF",
         "lastModified": "2025-10-31T05:24:20.000Z",
-        "downloads": 578
+        "downloads": 572
       },
       {
         "id": "QuantStack/Index-Anisora-V3.2-GGUF",
         "lastModified": "2025-10-16T23:05:10.000Z",
-        "downloads": 2691
+        "downloads": 2679
       },
       {
         "id": "QuantStack/HunyuanImage-2.1-Refiner-GGUF",
         "lastModified": "2025-09-21T04:00:29.000Z",
-        "downloads": 518
+        "downloads": 535
       },
       {
         "id": "QuantStack/Wan2.2-Animate-14B-GGUF",
         "lastModified": "2025-09-20T17:43:33.000Z",
-        "downloads": 24637
+        "downloads": 74778
       },
       {
         "id": "QuantStack/Wan2.2-VACE-Fun-A14B-GGUF",
         "lastModified": "2025-09-18T23:53:16.000Z",
-        "downloads": 16624
+        "downloads": 16731
       },
       {
         "id": "QuantStack/HuMo-GGUF",
         "lastModified": "2025-09-18T06:43:25.000Z",
-        "downloads": 243
+        "downloads": 240
       },
       {
         "id": "QuantStack/HunyuanImage-2.1-Distilled-GGUF",
         "lastModified": "2025-09-10T18:37:38.000Z",
-        "downloads": 297
+        "downloads": 285
       },
       {
         "id": "QuantStack/HunyuanImage-2.1-GGUF",
         "lastModified": "2025-09-10T18:19:48.000Z",
-        "downloads": 395
+        "downloads": 394
       },
       {
         "id": "QuantStack/Wan2.2-S2V-14B-GGUF",
         "lastModified": "2025-08-29T08:07:49.000Z",
-        "downloads": 5832
+        "downloads": 5814
       },
       {
         "id": "QuantStack/Wan2.2-Fun-5B-InP-GGUF",
         "lastModified": "2025-08-25T03:01:20.000Z",
-        "downloads": 747
+        "downloads": 721
       },
       {
         "id": "QuantStack/Wan2.2-Fun-5B-Control-Camera-GGUF",
         "lastModified": "2025-08-25T02:38:20.000Z",
-        "downloads": 295
+        "downloads": 280
       },
       {
         "id": "QuantStack/Wan2.2-Fun-5B-Control-GGUF",
         "lastModified": "2025-08-25T01:21:06.000Z",
-        "downloads": 1514
+        "downloads": 1522
       },
       {
         "id": "QuantStack/Wan2.2-Fun-A14B-Control-Camera-GGUF",
         "lastModified": "2025-08-15T22:48:01.000Z",
-        "downloads": 27360
+        "downloads": 27358
       },
       {
         "id": "QuantStack/Wan2.2-Fun-A14B-Control-GGUF",
         "lastModified": "2025-08-13T16:46:03.000Z",
-        "downloads": 6266
+        "downloads": 6225
       },
       {
         "id": "QuantStack/Wan2.2-Fun-A14B-InP-GGUF",
         "lastModified": "2025-08-13T13:53:52.000Z",
-        "downloads": 1367
+        "downloads": 1325
       },
       {
         "id": "QuantStack/Qwen-Image-Distill-GGUF",
         "lastModified": "2025-08-06T10:15:56.000Z",
-        "downloads": 1129
+        "downloads": 1115
       },
       {
         "id": "QuantStack/LTXV-13B-0.9.8-distilled-GGUF",
         "lastModified": "2025-07-17T01:29:26.000Z",
-        "downloads": 1149
+        "downloads": 1166
       },
       {
         "id": "QuantStack/LTXV-13B-0.9.8-dev-GGUF",
         "lastModified": "2025-07-17T01:26:59.000Z",
-        "downloads": 885
+        "downloads": 888
       },
       {
         "id": "QuantStack/MAGREF_Wan2.1_I2V_14B-GGUF",
         "lastModified": "2025-07-02T23:42:31.000Z",
-        "downloads": 252
+        "downloads": 247
       },
       {
         "id": "QuantStack/Wan2.1_T2V_14B_LightX2V_StepCfgDistill_VACE-GGUF",
         "lastModified": "2025-06-17T02:02:14.000Z",
-        "downloads": 656
+        "downloads": 636
       },
       {
         "id": "QuantStack/Phantom_Wan_14B_FusionX-GGUF",
         "lastModified": "2025-06-12T07:24:07.000Z",
-        "downloads": 323
+        "downloads": 318
       },
       {
         "id": "QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF",
         "lastModified": "2025-06-12T00:56:34.000Z",
-        "downloads": 2609
+        "downloads": 2602
       },
       {
         "id": "QuantStack/Wan2.1_T2V_14B_FusionX_VACE",
@@ -1961,139 +1961,139 @@
       {
         "id": "QuantStack/Wan2.1_T2V_14B_FusionX-GGUF",
         "lastModified": "2025-06-12T00:52:44.000Z",
-        "downloads": 2236
+        "downloads": 2230
       },
       {
         "id": "QuantStack/Wan2.1_I2V_14B_FusionX-GGUF",
         "lastModified": "2025-06-11T18:42:38.000Z",
-        "downloads": 1964
+        "downloads": 1833
       },
       {
         "id": "QuantStack/Wan2.1_14B_VACE-GGUF",
         "lastModified": "2025-06-11T13:59:15.000Z",
-        "downloads": 9668
+        "downloads": 9579
       },
       {
         "id": "QuantStack/Phantom_Wan_1.3B-GGUF",
         "lastModified": "2025-06-11T13:50:04.000Z",
-        "downloads": 268
+        "downloads": 281
       },
       {
         "id": "QuantStack/Phantom_Wan_14B-GGUF",
         "lastModified": "2025-06-09T11:14:19.000Z",
-        "downloads": 381
+        "downloads": 379
       },
       {
         "id": "QuantStack/Wan2.1-Fun-V1.1-14B-Control-Camera-GGUF",
         "lastModified": "2025-06-03T07:22:30.000Z",
-        "downloads": 214
+        "downloads": 213
       },
       {
         "id": "QuantStack/SkyReels-V2-T2V-14B-720P-VACE-GGUF",
         "lastModified": "2025-05-28T10:02:16.000Z",
-        "downloads": 100
+        "downloads": 105
       },
       {
         "id": "QuantStack/Wan2.1-Fun-V1.1-1.3B-Control-Camera-GGUF",
         "lastModified": "2025-05-22T16:45:22.000Z",
-        "downloads": 154
+        "downloads": 152
       }
     ],
     "city96": [
       {
         "id": "city96/Cosmos-Predict2-14B-Text2Image-gguf",
         "lastModified": "2025-06-14T23:23:44.000Z",
-        "downloads": 378
+        "downloads": 377
       },
       {
         "id": "city96/LTX-Video-0.9.6-distilled-gguf",
         "lastModified": "2025-04-26T21:42:27.000Z",
-        "downloads": 1198
+        "downloads": 1210
       },
       {
         "id": "city96/LTX-Video-0.9.6-dev-gguf",
         "lastModified": "2025-04-26T20:44:01.000Z",
-        "downloads": 617
+        "downloads": 636
       },
       {
         "id": "city96/Wan2.1-FLF2V-14B-720P-gguf",
         "lastModified": "2025-04-18T02:46:48.000Z",
-        "downloads": 7399
+        "downloads": 7453
       },
       {
         "id": "city96/HiDream-I1-Fast-gguf",
         "lastModified": "2025-04-17T05:40:03.000Z",
-        "downloads": 1267
+        "downloads": 1254
       },
       {
         "id": "city96/HiDream-I1-Full-gguf",
         "lastModified": "2025-04-16T02:46:42.000Z",
-        "downloads": 1244
+        "downloads": 1208
       },
       {
         "id": "city96/HiDream-I1-Dev-gguf",
         "lastModified": "2025-04-16T00:41:16.000Z",
-        "downloads": 1094
+        "downloads": 1075
       },
       {
         "id": "city96/Wan2.1-Fun-14B-Control-gguf",
         "lastModified": "2025-04-03T00:36:18.000Z",
-        "downloads": 1078
+        "downloads": 1087
       },
       {
         "id": "city96/Wan2.1-Fun-14B-InP-gguf",
         "lastModified": "2025-03-28T04:57:37.000Z",
-        "downloads": 432
+        "downloads": 429
       },
       {
         "id": "city96/HunyuanVideo-I2V-gguf",
         "lastModified": "2025-03-11T04:56:24.000Z",
-        "downloads": 4343
+        "downloads": 4334
       },
       {
         "id": "city96/LTX-Video-0.9.5-gguf",
         "lastModified": "2025-03-07T20:57:40.000Z",
-        "downloads": 509
+        "downloads": 518
       },
       {
         "id": "city96/Wan2.1-I2V-14B-720P-gguf",
         "lastModified": "2025-02-28T08:00:57.000Z",
-        "downloads": 8714
+        "downloads": 8550
       },
       {
         "id": "city96/Wan2.1-I2V-14B-480P-gguf",
         "lastModified": "2025-02-27T06:25:47.000Z",
-        "downloads": 53105
+        "downloads": 52486
       },
       {
         "id": "city96/Wan2.1-T2V-14B-gguf",
         "lastModified": "2025-02-26T07:15:36.000Z",
-        "downloads": 24580
+        "downloads": 24159
       },
       {
         "id": "city96/FastHunyuan-gguf",
         "lastModified": "2025-01-08T18:17:00.000Z",
-        "downloads": 1907
+        "downloads": 1880
       },
       {
         "id": "city96/AuraFlow-v0.3-gguf",
         "lastModified": "2024-12-31T21:40:50.000Z",
-        "downloads": 440
+        "downloads": 422
       },
       {
         "id": "city96/llava-llama-3-8b-v1_1-imat-gguf",
         "lastModified": "2024-12-20T20:40:52.000Z",
-        "downloads": 1125
+        "downloads": 1105
       },
       {
         "id": "city96/HunyuanVideo-gguf",
         "lastModified": "2024-12-17T06:33:49.000Z",
-        "downloads": 4085
+        "downloads": 4011
       },
       {
         "id": "city96/LTX-Video-gguf",
         "lastModified": "2024-12-14T06:52:26.000Z",
-        "downloads": 4104
+        "downloads": 3956
       },
       {
         "id": "city96/Flux.1-Heavy-17B",
@@ -2103,27 +2103,27 @@
       {
         "id": "city96/stable-diffusion-3.5-medium-gguf",
         "lastModified": "2024-10-30T01:45:56.000Z",
-        "downloads": 2544
+        "downloads": 2493
       },
       {
         "id": "city96/flux.1-lite-8B-alpha-gguf",
         "lastModified": "2024-10-24T01:08:54.000Z",
-        "downloads": 260
+        "downloads": 255
       },
       {
         "id": "city96/stable-diffusion-3.5-large-turbo-gguf",
         "lastModified": "2024-10-23T02:32:28.000Z",
-        "downloads": 1481
+        "downloads": 1468
       },
       {
         "id": "city96/stable-diffusion-3.5-large-gguf",
         "lastModified": "2024-10-23T02:02:15.000Z",
-        "downloads": 5862
+        "downloads": 5774
       },
       {
         "id": "city96/stable-diffusion-3-medium-gguf",
         "lastModified": "2024-10-22T23:43:49.000Z",
-        "downloads": 440
+        "downloads": 436
       },
       {
         "id": "city96/SD-Latent-Interposer",
@@ -2148,7 +2148,7 @@
       {
         "id": "city96/t5-v1_1-xxl-encoder-bf16",
         "lastModified": "2024-04-26T19:16:01.000Z",
-        "downloads": 3690
+        "downloads": 3669
       },
       {
         "id": "city96/RevDiff",
@@ -2180,17 +2180,17 @@
       {
         "id": "vantagewithai/JoyAI-Image-Edit-Plus-ComfyUI-GGUF",
         "lastModified": "2026-07-17T19:28:36.000Z",
-        "downloads": 0
+        "downloads": 976
       },
       {
         "id": "vantagewithai/Krea-2",
         "lastModified": "2026-07-17T10:26:40.000Z",
-        "downloads": 16885
+        "downloads": 16955
       },
       {
         "id": "vantagewithai/LTX2.3-10Eros-1.4-GGUF",
         "lastModified": "2026-07-13T08:51:01.000Z",
-        "downloads": 4939
+        "downloads": 5347
       },
       {
         "id": "vantagewithai/LTX2.3-10Eros-1.4-Split",
@@ -2200,17 +2200,17 @@
       {
         "id": "vantagewithai/LTX2.3-10Eros-GGUF",
         "lastModified": "2026-07-13T07:12:25.000Z",
-        "downloads": 60743
+        "downloads": 65041
       },
       {
         "id": "vantagewithai/LTX2.3-10Eros-1.2-GGUF",
         "lastModified": "2026-07-13T07:12:03.000Z",
-        "downloads": 13181
+        "downloads": 12812
       },
       {
         "id": "vantagewithai/LTX2.3-10Eros-1.3-GGUF",
         "lastModified": "2026-07-13T07:11:28.000Z",
-        "downloads": 16069
+        "downloads": 16246
       },
       {
         "id": "vantagewithai/LTX2.3-10Eros-1.2-Split",
@@ -2230,7 +2230,7 @@
       {
         "id": "vantagewithai/SCAIL-2-GGUF-ComfyUI",
         "lastModified": "2026-06-16T05:29:20.000Z",
-        "downloads": 9505
+        "downloads": 9118
       },
       {
         "id": "vantagewithai/Bernini-R-GGUF-ComfyUI",
@@ -2240,27 +2240,27 @@
       {
         "id": "vantagewithai/Lens-Turbo-GGUF-ComfyUI",
         "lastModified": "2026-05-25T18:15:40.000Z",
-        "downloads": 234
+        "downloads": 233
       },
       {
         "id": "vantagewithai/Lens-GGUF-ComfyUI",
         "lastModified": "2026-05-25T18:14:49.000Z",
-        "downloads": 129
+        "downloads": 125
       },
       {
         "id": "vantagewithai/LongCat-Video-Avatar-1.5-GGUF-ComfyUI",
         "lastModified": "2026-05-24T13:04:45.000Z",
-        "downloads": 4158
+        "downloads": 4119
       },
       {
         "id": "vantagewithai/Sulphur-2-Base-Split",
         "lastModified": "2026-05-11T07:21:56.000Z",
-        "downloads": 3742
+        "downloads": 3630
       },
       {
         "id": "vantagewithai/Sulphur-2-Base-GGUF",
         "lastModified": "2026-05-06T14:22:57.000Z",
-        "downloads": 21235
+        "downloads": 20763
       },
       {
         "id": "vantagewithai/LTX-2.3-Split",
@@ -2270,12 +2270,12 @@
       {
         "id": "vantagewithai/FireRed-Image-Edit-1.1-GGUF",
         "lastModified": "2026-03-27T10:44:36.000Z",
-        "downloads": 8101
+        "downloads": 7977
       },
       {
         "id": "vantagewithai/SCAIL-Preview-GGUF",
         "lastModified": "2026-03-25T02:17:49.000Z",
-        "downloads": 2219
+        "downloads": 2229
       },
       {
         "id": "vantagewithai/LongCat-Image-Edit-ComfyUI",
@@ -2285,47 +2285,47 @@
       {
         "id": "vantagewithai/LongCat-Image-Edit-GGUF",
         "lastModified": "2026-03-24T02:10:52.000Z",
-        "downloads": 664
+        "downloads": 659
       },
       {
         "id": "vantagewithai/LongCat-Image-Edit-Turbo-GGUF",
         "lastModified": "2026-03-24T02:02:31.000Z",
-        "downloads": 846
+        "downloads": 815
       },
       {
         "id": "vantagewithai/FLUX.2-klein-9b-kv-GGUF",
         "lastModified": "2026-03-15T23:15:31.000Z",
-        "downloads": 596
+        "downloads": 584
       },
       {
         "id": "vantagewithai/LongCat-Image-GGUF",
         "lastModified": "2026-03-05T04:42:15.000Z",
-        "downloads": 497
+        "downloads": 468
       },
       {
         "id": "vantagewithai/Capybara-GGUF",
         "lastModified": "2026-02-28T11:43:03.000Z",
-        "downloads": 134
+        "downloads": 132
       },
       {
         "id": "vantagewithai/FireRed-Image-Edit-1.0-GGUF",
         "lastModified": "2026-02-21T22:18:21.000Z",
-        "downloads": 532
+        "downloads": 522
       },
       {
         "id": "vantagewithai/SkyReels-V3-14B-GGUF",
         "lastModified": "2026-02-13T12:31:58.000Z",
-        "downloads": 1003
+        "downloads": 1041
       },
       {
         "id": "vantagewithai/Z-Image-GGUF",
         "lastModified": "2026-01-30T01:08:13.000Z",
-        "downloads": 637
+        "downloads": 625
       },
       {
         "id": "vantagewithai/LTX-2-GGUF",
         "lastModified": "2026-01-10T14:07:25.000Z",
-        "downloads": 3912
+        "downloads": 3882
       },
       {
         "id": "vantagewithai/LTX-2-Split",
@@ -2340,17 +2340,17 @@
       {
         "id": "vantagewithai/LongCat-Video-Avatar-ComfyUI-GGUF",
         "lastModified": "2026-01-05T03:29:11.000Z",
-        "downloads": 1448
+        "downloads": 1440
       },
       {
         "id": "vantagewithai/Qwen-Image-Layered-GGUF",
         "lastModified": "2025-12-29T06:48:48.000Z",
-        "downloads": 978
+        "downloads": 970
       },
       {
         "id": "vantagewithai/TurboWan2.1-T2V-14B-720P-ComfyUI-GGUF",
         "lastModified": "2025-12-22T16:46:44.000Z",
-        "downloads": 167
+        "downloads": 166
       },
       {
         "id": "vantagewithai/TurboWan2.1-T2V-14B-720P-ComfyUI",
@@ -2365,32 +2365,32 @@
       {
         "id": "vantagewithai/TurboWan2.2-I2V-A14B-720P-ComfyUI-GGUF",
         "lastModified": "2025-12-22T01:46:52.000Z",
-        "downloads": 279
+        "downloads": 275
       },
       {
         "id": "vantagewithai/Magic-Wan-Image-V2-GGUF",
         "lastModified": "2025-12-20T18:00:44.000Z",
-        "downloads": 586
+        "downloads": 576
       },
       {
         "id": "vantagewithai/One-to-All-14b-GGUF",
         "lastModified": "2025-12-11T19:10:59.000Z",
-        "downloads": 171
+        "downloads": 1448
       },
       {
         "id": "vantagewithai/Wan-Move-14B-480P-GGUF",
         "lastModified": "2025-12-11T10:30:47.000Z",
-        "downloads": 228
+        "downloads": 232
       },
       {
         "id": "vantagewithai/Z-Image-Turbo-GGUF",
         "lastModified": "2025-12-07T16:49:11.000Z",
-        "downloads": 4527
+        "downloads": 4386
       },
       {
         "id": "vantagewithai/Lucy-Edit-1.1-Dev-GGUF",
         "lastModified": "2025-12-01T13:14:28.000Z",
-        "downloads": 145
+        "downloads": 128
       },
       {
         "id": "vantagewithai/Step-Fun-EditX-ComfyUI",
@@ -2400,27 +2400,27 @@
       {
         "id": "vantagewithai/ChronoEdit-GGUF",
         "lastModified": "2025-11-26T04:38:47.000Z",
-        "downloads": 149
+        "downloads": 150
       },
       {
         "id": "vantagewithai/BindWeave-GGUF",
         "lastModified": "2025-11-21T09:38:08.000Z",
-        "downloads": 241
+        "downloads": 237
       },
       {
         "id": "vantagewithai/Lynx-GGUF",
         "lastModified": "2025-11-20T17:02:34.000Z",
-        "downloads": 679
+        "downloads": 696
       },
       {
         "id": "vantagewithai/MoCha-GGUF",
         "lastModified": "2025-11-20T17:02:04.000Z",
-        "downloads": 80
+        "downloads": 76
       },
       {
         "id": "vantagewithai/Ditto-GGUF",
         "lastModified": "2025-11-20T17:01:40.000Z",
-        "downloads": 809
+        "downloads": 801
       },
       {
         "id": "vantagewithai/ChronoEdit-fp8-scaled",
@@ -2450,93 +2450,16 @@
         "downloads": 0
       }
     ],
-    "stduhpf": [
-      {
-        "id": "stduhpf/Krea-2-Turbo-GGUF",
-        "lastModified": "2026-07-02T23:34:44.000Z",
-        "downloads": 4482
-      },
-      {
-        "id": "stduhpf/Nucleus-Image-sdcpp",
-        "lastModified": "2026-04-21T16:05:55.000Z",
-        "downloads": 0
-      },
-      {
-        "id": "stduhpf/Chroma1-Radiance-gguf",
-        "lastModified": "2026-02-11T16:33:52.000Z",
-        "downloads": 256
-      },
-      {
-        "id": "stduhpf/LongCat-Image-gguf",
-        "lastModified": "2025-12-09T15:11:16.000Z",
-        "downloads": 140
-      },
-      {
-        "id": "stduhpf/LongCat-Image-Dev-gguf",
-        "lastModified": "2025-12-09T14:22:48.000Z",
-        "downloads": 115
-      },
-      {
-        "id": "stduhpf/LongCat-Image-Edit-gguf",
-        "lastModified": "2025-12-09T13:56:59.000Z",
-        "downloads": 248
-      },
-      {
-        "id": "stduhpf/google-gemma-3-1b-it-qat-q4_0-gguf-small",
-        "lastModified": "2025-08-06T15:40:11.000Z",
-        "downloads": 308
-      },
-      {
-        "id": "stduhpf/Voxtral-Small-24B-2507-GGUF",
-        "lastModified": "2025-07-28T18:49:33.000Z",
-        "downloads": 47
-      },
-      {
-        "id": "stduhpf/google-gemma-3-27b-it-qat-q4_0-gguf-small",
-        "lastModified": "2025-04-28T15:55:11.000Z",
-        "downloads": 1043
-      },
-      {
-        "id": "stduhpf/Qwen3-0.6B-F16-GGUF-Fixed",
-        "lastModified": "2025-04-28T12:25:22.000Z",
-        "downloads": 39
-      },
-      {
-        "id": "stduhpf/google-gemma-3-12b-it-qat-q4_0-gguf-small",
-        "lastModified": "2025-04-11T13:05:13.000Z",
-        "downloads": 487
-      },
-      {
-        "id": "stduhpf/google-gemma-3-4b-it-qat-q4_0-gguf-small",
-        "lastModified": "2025-04-10T10:14:33.000Z",
-        "downloads": 287
-      },
-      {
-        "id": "stduhpf/dreamshaper-8LCM-im-GGUF-sdcpp",
-        "lastModified": "2025-03-23T19:54:21.000Z",
-        "downloads": 727
-      },
-      {
-        "id": "stduhpf/SD3.5-Large-Turbo-GGUF-mixed-sdcpp",
-        "lastModified": "2024-11-28T21:17:26.000Z",
-        "downloads": 344
-      },
-      {
-        "id": "stduhpf/SD3.5-Large-GGUF-mixed-sdcpp",
-        "lastModified": "2024-11-28T21:17:05.000Z",
-        "downloads": 258
-      }
-    ],
     "rectangleworm": [
       {
         "id": "rectangleworm/bigasp-3",
         "lastModified": "2026-06-24T13:08:49.000Z",
-        "downloads": 341
+        "downloads": 351
       },
       {
         "id": "rectangleworm/chroma-gguf",
         "lastModified": "2026-06-14T00:13:05.000Z",
-        "downloads": 211
+        "downloads": 210
       }
     ],
     "jayn7": [
@@ -2548,49 +2471,49 @@
       {
         "id": "jayn7/WAN2.2-I2V_A14B-DISTILL-LIGHTX2V-4STEP-GGUF",
         "lastModified": "2026-04-14T01:09:15.000Z",
-        "downloads": 15628
+        "downloads": 27185
       },
       {
         "id": "jayn7/HunyuanVideo-1.5_T2V_480p-GGUF",
         "lastModified": "2025-11-27T09:26:44.000Z",
-        "downloads": 2462
+        "downloads": 2453
       },
       {
         "id": "jayn7/HunyuanVideo-1.5_T2V_720p-GGUF",
         "lastModified": "2025-11-27T09:26:36.000Z",
-        "downloads": 940
+        "downloads": 835
       },
       {
         "id": "jayn7/HunyuanVideo-1.5_I2V_480p-GGUF",
         "lastModified": "2025-11-27T09:26:28.000Z",
-        "downloads": 2815
+        "downloads": 2719
       },
       {
         "id": "jayn7/HunyuanVideo-1.5_I2V_720p-GGUF",
         "lastModified": "2025-11-27T09:26:08.000Z",
-        "downloads": 1704
+        "downloads": 1720
       }
     ],
     "QuantFunc": [
       {
         "id": "QuantFunc/Qwen-Image-Series",
         "lastModified": "2026-06-26T07:42:48.000Z",
-        "downloads": 57
+        "downloads": 52
       },
       {
         "id": "QuantFunc/Qwen-Image-Edit-Series",
         "lastModified": "2026-06-26T07:41:18.000Z",
-        "downloads": 52
+        "downloads": 37
       },
       {
         "id": "QuantFunc/Qwen-Image-Layered-Series",
         "lastModified": "2026-06-20T01:16:09.000Z",
-        "downloads": 20
+        "downloads": 21
       },
       {
         "id": "QuantFunc/Z-Image-Series",
         "lastModified": "2026-06-19T02:50:07.000Z",
-        "downloads": 7
+        "downloads": 1
       }
     ],
     "tonera": [
@@ -2607,12 +2530,12 @@
       {
         "id": "tonera/Chroma1-HD-SVDQ",
         "lastModified": "2026-06-23T02:23:37.000Z",
-        "downloads": 293
+        "downloads": 274
       },
       {
         "id": "tonera/FLUX.2-klein-9b-kv-Nunchaku",
         "lastModified": "2026-06-23T02:21:06.000Z",
-        "downloads": 529
+        "downloads": 521
       },
       {
         "id": "tonera/roop",
@@ -2627,7 +2550,7 @@
       {
         "id": "tonera/Qwen3-text-Nunchaku",
         "lastModified": "2026-04-09T03:50:32.000Z",
-        "downloads": 24785
+        "downloads": 26171
       },
       {
         "id": "tonera/Qwen2.5vl-Nunchaku",
@@ -2637,7 +2560,7 @@
       {
         "id": "tonera/Fluxmania_legacy-Nunchaku",
         "lastModified": "2026-04-06T02:05:00.000Z",
-        "downloads": 76
+        "downloads": 72
       },
       {
         "id": "tonera/Beyond_Reality_Zimage_v3_svdq",
@@ -2657,12 +2580,12 @@
       {
         "id": "tonera/Beyond_Reality_Zimage_v2_svdq",
         "lastModified": "2026-02-01T14:44:11.000Z",
-        "downloads": 35
+        "downloads": 29
       },
       {
         "id": "tonera/zavychromaxl_v100",
         "lastModified": "2026-01-23T21:46:52.000Z",
-        "downloads": 12
+        "downloads": 10
       },
       {
         "id": "tonera/waiSHUFFLENOOB_vPred20",
@@ -2672,7 +2595,7 @@
       {
         "id": "tonera/waiSHUFFLENOOB_vPred03",
         "lastModified": "2026-01-23T21:23:06.000Z",
-        "downloads": 5
+        "downloads": 6
       },
       {
         "id": "tonera/waiREALMIX_v11",
@@ -2682,17 +2605,17 @@
       {
         "id": "tonera/waiNSFWIllustrious_v150",
         "lastModified": "2026-01-23T20:48:45.000Z",
-        "downloads": 160
+        "downloads": 153
       },
       {
         "id": "tonera/waiNSFWIllustrious_v140",
         "lastModified": "2026-01-23T20:40:42.000Z",
-        "downloads": 19
+        "downloads": 20
       },
       {
         "id": "tonera/waiANINSFWPONYXL_v140",
         "lastModified": "2026-01-23T20:31:44.000Z",
-        "downloads": 27
+        "downloads": 26
       },
       {
         "id": "tonera/sdxlNijiSeven_sdxlNijiSeven",
@@ -2707,7 +2630,7 @@
       {
         "id": "tonera/realvisxlV50_v50Lightning",
         "lastModified": "2026-01-23T19:42:16.000Z",
-        "downloads": 12
+        "downloads": 11
       },
       {
         "id": "tonera/protovisionXLHighFidelity3D_V660",
@@ -2717,7 +2640,7 @@
       {
         "id": "tonera/prefectPonyXL_v6",
         "lastModified": "2026-01-23T19:13:59.000Z",
-        "downloads": 9
+        "downloads": 8
       },
       {
         "id": "tonera/prefectIllustriousXL_v3",
@@ -2727,7 +2650,7 @@
       {
         "id": "tonera/prefectIllustriousXL_v20p",
         "lastModified": "2026-01-23T18:42:15.000Z",
-        "downloads": 11
+        "downloads": 10
       },
       {
         "id": "tonera/ponyRealism_V23",
@@ -2747,12 +2670,12 @@
       {
         "id": "tonera/oneObsession_v19",
         "lastModified": "2026-01-23T17:46:20.000Z",
-        "downloads": 58
+        "downloads": 56
       },
       {
         "id": "tonera/oneObsession_v18",
         "lastModified": "2026-01-23T17:31:18.000Z",
-        "downloads": 8
+        "downloads": 9
       },
       {
         "id": "tonera/oneObsession_v16Noobai",
@@ -2777,12 +2700,12 @@
       {
         "id": "tonera/iniverseMixSFWNSFW_ponyRealGuofengV51",
         "lastModified": "2026-01-23T16:15:22.000Z",
-        "downloads": 28
+        "downloads": 27
       },
       {
         "id": "tonera/illustriousXL20_v20",
         "lastModified": "2026-01-21T23:16:59.000Z",
-        "downloads": 29
+        "downloads": 31
       },
       {
         "id": "tonera/hyphoriaIlluNAI_v001",
@@ -2802,7 +2725,7 @@
       {
         "id": "tonera/hassakuXLIllustrious_v22",
         "lastModified": "2026-01-21T22:11:48.000Z",
-        "downloads": 18
+        "downloads": 17
       },
       {
         "id": "tonera/fucktastic25DCheckpointPony_30",
@@ -2812,12 +2735,12 @@
       {
         "id": "tonera/dynavisionXLAllInOneStylized_v0610",
         "lastModified": "2026-01-21T19:29:17.000Z",
-        "downloads": 27
+        "downloads": 25
       },
       {
         "id": "tonera/dvine_v70",
         "lastModified": "2026-01-21T19:18:07.000Z",
-        "downloads": 24
+        "downloads": 21
       },
       {
         "id": "tonera/duchaitenPonyXLNo_v70",
@@ -2832,12 +2755,12 @@
       {
         "id": "tonera/dreamshaperXL_v21TurboDPMSDE",
         "lastModified": "2026-01-21T18:12:57.000Z",
-        "downloads": 19
+        "downloads": 16
       },
       {
         "id": "tonera/cyberrealistic_v80Redux",
         "lastModified": "2026-01-21T17:50:15.000Z",
-        "downloads": 4
+        "downloads": 5
       },
       {
         "id": "tonera/cyberrealisticPony_v127Alt",
@@ -2862,32 +2785,32 @@
       {
         "id": "tonera/NoobAI-XL-Vpred-v1.0-cyberfix-perpendicular",
         "lastModified": "2026-01-21T15:59:41.000Z",
-        "downloads": 11
+        "downloads": 9
       },
       {
         "id": "tonera/NoobAI-XL-Vpred-v1.0-cyberfix",
         "lastModified": "2026-01-21T15:31:22.000Z",
-        "downloads": 10
+        "downloads": 7
       },
       {
         "id": "tonera/Juggernaut-XL_v9_RunDiffusionPhoto_v2",
         "lastModified": "2026-01-21T15:06:47.000Z",
-        "downloads": 111
+        "downloads": 73
       },
       {
         "id": "tonera/FLUX.2-klein-4B-int8-diffusers",
         "lastModified": "2026-01-18T00:59:38.000Z",
-        "downloads": 443
+        "downloads": 446
       },
       {
         "id": "tonera/FLUX.2-klein-4B-fp8-diffusers",
         "lastModified": "2026-01-17T03:52:10.000Z",
-        "downloads": 1852
+        "downloads": 1737
       },
       {
         "id": "tonera/FLUX.2-klein-9B-Int8-TorchAo",
         "lastModified": "2026-01-16T15:31:47.000Z",
-        "downloads": 13
+        "downloads": 11
       }
     ],
     "Winnougan": [
@@ -2966,7 +2889,7 @@
       {
         "id": "silveroxides/flan-t5-xxl-encoder-only",
         "lastModified": "2026-06-20T20:42:53.000Z",
-        "downloads": 3168
+        "downloads": 3108
       },
       {
         "id": "silveroxides/ideogram4-dequant-and-int8-quant",
@@ -2981,7 +2904,7 @@
       {
         "id": "silveroxides/Qwen3.5-QuantOpsQuants",
         "lastModified": "2026-06-15T17:36:27.000Z",
-        "downloads": 347
+        "downloads": 371
       },
       {
         "id": "silveroxides/comfy-kitchen-int8-wheels",
@@ -3021,7 +2944,7 @@
       {
         "id": "silveroxides/SmallHateKleinDrei",
         "lastModified": "2026-05-24T10:31:58.000Z",
-        "downloads": 41
+        "downloads": 39
       },
       {
         "id": "silveroxides/Flux2-Misc-LoRA",
@@ -3031,17 +2954,17 @@
       {
         "id": "silveroxides/Glenn-Image-Edit",
         "lastModified": "2026-05-22T15:45:51.000Z",
-        "downloads": 23
+        "downloads": 22
       },
       {
         "id": "silveroxides/Chroma-Misc-Models",
         "lastModified": "2026-05-19T00:15:48.000Z",
-        "downloads": 3305
+        "downloads": 3361
       },
       {
         "id": "silveroxides/Anima-Quantized",
         "lastModified": "2026-05-18T00:27:10.000Z",
-        "downloads": 806
+        "downloads": 703
       },
       {
         "id": "silveroxides/Chroma-LoRAs",
@@ -3111,7 +3034,7 @@
       {
         "id": "silveroxides/Chroma1-Radiance-GGUF",
         "lastModified": "2025-12-12T11:12:08.000Z",
-        "downloads": 295
+        "downloads": 283
       },
       {
         "id": "silveroxides/WAN-LoRAs",
@@ -3126,22 +3049,22 @@
       {
         "id": "silveroxides/Chroma1-Base-GGUF",
         "lastModified": "2025-09-27T18:50:47.000Z",
-        "downloads": 239
+        "downloads": 237
       },
       {
         "id": "silveroxides/Chroma1-HD-GGUF",
         "lastModified": "2025-09-17T18:47:36.000Z",
-        "downloads": 48640
+        "downloads": 46878
       },
       {
         "id": "silveroxides/Chroma-GGUF",
         "lastModified": "2025-09-11T23:13:42.000Z",
-        "downloads": 153797
+        "downloads": 153733
       },
       {
         "id": "silveroxides/Chroma1-Flash-GGUF",
         "lastModified": "2025-09-11T03:27:40.000Z",
-        "downloads": 4155
+        "downloads": 4002
       },
       {
         "id": "silveroxides/pruned-models",
@@ -3161,7 +3084,7 @@
       {
         "id": "silveroxides/flan-t5-xxl-encoder-only-GGUF",
         "lastModified": "2025-06-05T21:57:51.000Z",
-        "downloads": 5489
+        "downloads": 5511
       },
       {
         "id": "silveroxides/t5xxl_flan_enc",
@@ -3236,12 +3159,12 @@
       {
         "id": "silveroxides/OmniGen-V1-fp8_e4m3fn",
         "lastModified": "2024-11-19T11:03:37.000Z",
-        "downloads": 49
+        "downloads": 46
       },
       {
         "id": "silveroxides/NoobAI-XL-V-Pred-0.5",
         "lastModified": "2024-11-16T22:40:16.000Z",
-        "downloads": 13
+        "downloads": 12
       },
       {
         "id": "silveroxides/NoobAI-XL-EPS-1.0-Vwe",
@@ -3408,7 +3331,7 @@
       {
         "id": "Kijai/WanVideo_comfy",
         "lastModified": "2026-06-13T16:56:23.000Z",
-        "downloads": 1935138
+        "downloads": 1896697
       },
       {
         "id": "Kijai/Gemma2_comfy",
@@ -3433,7 +3356,7 @@
       {
         "id": "Kijai/LTXV2_comfy",
         "lastModified": "2026-02-22T13:27:50.000Z",
-        "downloads": 41090
+        "downloads": 41001
       },
       {
         "id": "Kijai/Gemma3_comfy",
@@ -3448,7 +3371,7 @@
       {
         "id": "Kijai/Kandinsky5_comfy",
         "lastModified": "2025-12-10T11:43:07.000Z",
-        "downloads": 188
+        "downloads": 200
       },
       {
         "id": "Kijai/vitpose_comfy",
@@ -3458,7 +3381,7 @@
       {
         "id": "Kijai/WanVideo_comfy_GGUF",
         "lastModified": "2025-09-19T16:30:32.000Z",
-        "downloads": 54204
+        "downloads": 53971
       },
       {
         "id": "Kijai/wav2vec2_safetensors",
@@ -3468,7 +3391,7 @@
       {
         "id": "Kijai/MelBandRoFormer_comfy",
         "lastModified": "2025-08-23T19:37:24.000Z",
-        "downloads": 91968
+        "downloads": 89240
       },
       {
         "id": "Kijai/PrecompiledWheels",
@@ -3478,7 +3401,7 @@
       {
         "id": "Kijai/HunyuanVideo_comfy",
         "lastModified": "2025-05-09T12:03:02.000Z",
-        "downloads": 2445
+        "downloads": 2387
       },
       {
         "id": "Kijai/LTXV",
@@ -3498,7 +3421,7 @@
       {
         "id": "Kijai/SkyReels-V1-Hunyuan_comfy",
         "lastModified": "2025-02-20T10:26:33.000Z",
-        "downloads": 460
+        "downloads": 450
       },
       {
         "id": "Kijai/CogVideoX-comfy",
@@ -3548,7 +3471,7 @@
       {
         "id": "Kijai/llava-llama-3-8b-text-encoder-tokenizer",
         "lastModified": "2024-12-03T16:42:06.000Z",
-        "downloads": 826
+        "downloads": 786
       },
       {
         "id": "Kijai/FLUX.1-dev-IP-Adapter-safetensors",
@@ -3558,7 +3481,7 @@
       {
         "id": "Kijai/CogVideoX-5b-1.5",
         "lastModified": "2024-11-15T14:00:13.000Z",
-        "downloads": 35
+        "downloads": 33
       },
       {
         "id": "Kijai/pyramid-flow-comfy",
@@ -3613,7 +3536,7 @@
       {
         "id": "Kijai/CogVideoX-Fun-pruned",
         "lastModified": "2024-09-20T13:19:42.000Z",
-        "downloads": 510
+        "downloads": 498
       },
       {
         "id": "Kijai/VEnhancer-fp16",
@@ -3658,7 +3581,7 @@
       {
         "id": "Kijai/AnimateLCM-SVD-Comfy",
         "lastModified": "2024-07-02T18:00:06.000Z",
-        "downloads": 118
+        "downloads": 123
       },
       {
         "id": "Kijai/ccsr-safetensors",
@@ -3693,7 +3616,7 @@
       {
         "id": "Kijai/clipseg-rd64-refined-fp16",
         "lastModified": "2024-05-13T19:03:18.000Z",
-        "downloads": 401
+        "downloads": 392
       },
       {
         "id": "Kijai/BrushNet-fp16",
@@ -3738,14 +3661,14 @@
     ],
     "AX1Y2JP": [
       {
-        "id": "AX1Y2JP/krea2-my_test_model10",
-        "lastModified": "2026-07-17T07:25:41.000Z",
-        "downloads": 82
+        "id": "AX1Y2JP/seedvr2-my_test_model12",
+        "lastModified": "2026-07-19T05:08:56.000Z",
+        "downloads": 0
       },
       {
-        "id": "AX1Y2JP/seedvr2-my_test_model12",
-        "lastModified": "2026-07-17T07:04:43.000Z",
-        "downloads": 0
+        "id": "AX1Y2JP/krea2-my_test_model10",
+        "lastModified": "2026-07-17T07:25:41.000Z",
+        "downloads": 86
       },
       {
         "id": "AX1Y2JP/LTX2.3-10Eros_split",
@@ -3755,7 +3678,7 @@
       {
         "id": "AX1Y2JP/FLUX.2-dev-my_test_model11",
         "lastModified": "2026-07-12T16:43:37.000Z",
-        "downloads": 30
+        "downloads": 34
       },
       {
         "id": "AX1Y2JP/krea-2-my_test_model9",
@@ -3770,7 +3693,7 @@
       {
         "id": "AX1Y2JP/anima_extracted_lora",
         "lastModified": "2026-07-08T23:16:59.000Z",
-        "downloads": 397
+        "downloads": 401
       },
       {
         "id": "AX1Y2JP/Gemma-3-12B-IT-Ultra-Uncensored-Heretic-ComfyUI-fp8",
@@ -3790,17 +3713,17 @@
       {
         "id": "AX1Y2JP/my_test_model7",
         "lastModified": "2026-05-08T05:48:48.000Z",
-        "downloads": 6
+        "downloads": 5
       },
       {
         "id": "AX1Y2JP/FLUX.1-Krea-BLAZE-lora-merged",
         "lastModified": "2026-05-03T01:34:01.000Z",
-        "downloads": 128
+        "downloads": 130
       },
       {
         "id": "AX1Y2JP/FLUX.1-schnell-krea-lora-merged",
         "lastModified": "2026-05-02T23:13:54.000Z",
-        "downloads": 2091
+        "downloads": 2089
       },
       {
         "id": "AX1Y2JP/Ovis-Image-DF11",
@@ -3862,7 +3785,7 @@
       {
         "id": "obsxrver/wan2.2-i2v-blink-piss",
         "lastModified": "2026-06-06T00:06:40.000Z",
-        "downloads": 2184
+        "downloads": 2052
       },
       {
         "id": "obsxrver/wan22-aot",
@@ -3872,7 +3795,7 @@
       {
         "id": "obsxrver/wan2.2-t2v-bdsm",
         "lastModified": "2026-04-15T18:18:34.000Z",
-        "downloads": 103
+        "downloads": 102
       },
       {
         "id": "obsxrver/sam3",
@@ -3882,17 +3805,17 @@
       {
         "id": "obsxrver/wan2.2-t2v-scat",
         "lastModified": "2026-03-26T01:09:59.000Z",
-        "downloads": 369
+        "downloads": 365
       },
       {
         "id": "obsxrver/wan2.2-t2v-piss",
         "lastModified": "2026-01-11T01:48:45.000Z",
-        "downloads": 34
+        "downloads": 32
       },
       {
         "id": "obsxrver/wan2.2-i2v-scat",
         "lastModified": "2025-12-19T00:26:48.000Z",
-        "downloads": 1228
+        "downloads": 1197
       },
       {
         "id": "obsxrver/Wan2.2_GTA-Style",
@@ -3904,47 +3827,47 @@
       {
         "id": "Bedovyy/Anima-INT8",
         "lastModified": "2026-07-14T19:41:43.000Z",
-        "downloads": 15132
+        "downloads": 15166
       },
       {
         "id": "Bedovyy/Anima-FP8",
         "lastModified": "2026-06-02T16:54:24.000Z",
-        "downloads": 955
+        "downloads": 947
       },
       {
         "id": "Bedovyy/Anima-GGUF",
         "lastModified": "2026-05-15T10:47:26.000Z",
-        "downloads": 1265
+        "downloads": 1258
       },
       {
         "id": "Bedovyy/gemma-4-E4B-it-ultra-uncensored-heretic-Comfy",
         "lastModified": "2026-05-12T12:59:30.000Z",
-        "downloads": 1067
+        "downloads": 1081
       },
       {
         "id": "Bedovyy/pixai-tagger-v0.9-timm",
         "lastModified": "2026-05-11T17:00:25.000Z",
-        "downloads": 287
+        "downloads": 286
       },
       {
         "id": "Bedovyy/OppaiOracle-V1.1-timm",
         "lastModified": "2026-05-11T17:00:00.000Z",
-        "downloads": 64
+        "downloads": 65
       },
       {
         "id": "Bedovyy/Qwen3.5-4B-heretic-Comfy",
         "lastModified": "2026-03-27T05:20:59.000Z",
-        "downloads": 1391
+        "downloads": 1392
       },
       {
         "id": "Bedovyy/Heretical-Qwen3.5-9B-Comfy",
         "lastModified": "2026-03-27T05:19:36.000Z",
-        "downloads": 1355
+        "downloads": 1352
       },
       {
         "id": "Bedovyy/LTX2.3_transformer_only_comfy",
         "lastModified": "2026-03-18T05:13:23.000Z",
-        "downloads": 5104
+        "downloads": 5124
       },
       {
         "id": "Bedovyy/FLUX.2-klein-4b-nvfp4mixed",
@@ -3959,12 +3882,12 @@
       {
         "id": "Bedovyy/Qwen-Image-Edit-2511-NVFP4",
         "lastModified": "2026-02-20T06:39:53.000Z",
-        "downloads": 1479
+        "downloads": 1416
       },
       {
         "id": "Bedovyy/dasiwaWAN22I2V14B-GGUF",
         "lastModified": "2025-12-17T15:06:51.000Z",
-        "downloads": 6684
+        "downloads": 6637
       },
       {
         "id": "Bedovyy/YanoljaNEXT-Rosetta-27B-2511-W4A16-G128",
@@ -3974,7 +3897,7 @@
       {
         "id": "Bedovyy/smoothMixWan22-I2V-GGUF",
         "lastModified": "2025-10-29T03:22:46.000Z",
-        "downloads": 14569
+        "downloads": 14185
       },
       {
         "id": "Bedovyy/YanoljaNEXT-Rosetta-12B-2510-FP8-Dynamic",
@@ -4028,8 +3951,18 @@
     "Abiray/ERNIE-Image-Turbo-FP8-NVFP4": [
       "ernie-image-turbo-fp8.safetensors",
       "ernie-image-turbo-nvfp4.safetensors",
+      "model_index.json",
+      "pe/config.json",
+      "pe/generation_config.json",
       "pe/model.safetensors",
+      "pe_tokenizer/tokenizer.json",
+      "pe_tokenizer/tokenizer_config.json",
+      "scheduler/scheduler_config.json",
+      "text_encoder/config.json",
       "text_encoder/model.safetensors",
+      "tokenizer/tokenizer.json",
+      "tokenizer/tokenizer_config.json",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "Bedovyy/ERNIE-Image-Quantized": [
@@ -4343,19 +4276,58 @@
       "ltx-2.3-22b-dev-nvfp4.safetensors"
     ],
     "OzzyGT/Krea_2_Turbo_nunchaku_lite_nvfp4": [
+      "model_index.json",
+      "scheduler/scheduler_config.json",
+      "text_encoder/config.json",
       "text_encoder/model.safetensors",
+      "tokenizer/tokenizer.json",
+      "tokenizer/tokenizer_config.json",
+      "transformer/config.json",
       "transformer/diffusion_pytorch_model.safetensors",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "Patil/krea-turbo-svdquant": [
+      "svdquant_config.json",
       "transformer_svdquant.safetensors"
     ],
-    "QuantFunc/Ideogram-4-Series": [],
+    "QuantFunc/Ideogram-4-Series": [
+      "config.json",
+      "precision-config/ideogram4_a4w4.json"
+    ],
     "QuantFunc/Klein-4B-Series": [
+      "config.json",
+      "klein-4b-series-50x-above-base-model/model_index.json",
+      "klein-4b-series-50x-above-base-model/quantfunc_config.json",
+      "klein-4b-series-50x-above-base-model/scheduler/scheduler_config.json",
+      "klein-4b-series-50x-above-base-model/text_encoder/config.json",
       "klein-4b-series-50x-above-base-model/text_encoder/model.safetensors",
+      "klein-4b-series-50x-above-base-model/tokenizer/added_tokens.json",
+      "klein-4b-series-50x-above-base-model/tokenizer/special_tokens_map.json",
+      "klein-4b-series-50x-above-base-model/tokenizer/tokenizer.json",
+      "klein-4b-series-50x-above-base-model/tokenizer/tokenizer_config.json",
+      "klein-4b-series-50x-above-base-model/tokenizer/vocab.json",
+      "klein-4b-series-50x-above-base-model/transformer/config.json",
+      "klein-4b-series-50x-above-base-model/vae/config.json",
       "klein-4b-series-50x-above-base-model/vae/diffusion_pytorch_model.safetensors",
+      "klein-4b-series-50x-below-base-model/model_index.json",
+      "klein-4b-series-50x-below-base-model/quantfunc_config.json",
+      "klein-4b-series-50x-below-base-model/scheduler/scheduler_config.json",
+      "klein-4b-series-50x-below-base-model/text_encoder/config.json",
       "klein-4b-series-50x-below-base-model/text_encoder/model.safetensors",
+      "klein-4b-series-50x-below-base-model/tokenizer/added_tokens.json",
+      "klein-4b-series-50x-below-base-model/tokenizer/special_tokens_map.json",
+      "klein-4b-series-50x-below-base-model/tokenizer/tokenizer.json",
+      "klein-4b-series-50x-below-base-model/tokenizer/tokenizer_config.json",
+      "klein-4b-series-50x-below-base-model/tokenizer/vocab.json",
+      "klein-4b-series-50x-below-base-model/transformer/config.json",
+      "klein-4b-series-50x-below-base-model/vae/config.json",
       "klein-4b-series-50x-below-base-model/vae/diffusion_pytorch_model.safetensors",
+      "model_index.json",
+      "precision-config/30x-below-int4-i8-sample.json",
+      "precision-config/40x-int4-f8-sample.json",
+      "precision-config/50x-fp4-f8-sample.json",
+      "transformer/config.json",
       "transformer/klein-4b-30x-below-lighting.safetensors",
       "transformer/klein-4b-40x-lighting.safetensors",
       "transformer/klein-4b-50x-lighting.safetensors",
@@ -4364,10 +4336,38 @@
       "transformer/klein-4b-base-50x-lighting.safetensors"
     ],
     "QuantFunc/Klein-9B-Series": [
+      "config.json",
+      "klein-9b-series-50x-above-base-model/model_index.json",
+      "klein-9b-series-50x-above-base-model/quantfunc_config.json",
+      "klein-9b-series-50x-above-base-model/scheduler/scheduler_config.json",
+      "klein-9b-series-50x-above-base-model/text_encoder/config.json",
       "klein-9b-series-50x-above-base-model/text_encoder/model.safetensors",
+      "klein-9b-series-50x-above-base-model/tokenizer/added_tokens.json",
+      "klein-9b-series-50x-above-base-model/tokenizer/special_tokens_map.json",
+      "klein-9b-series-50x-above-base-model/tokenizer/tokenizer.json",
+      "klein-9b-series-50x-above-base-model/tokenizer/tokenizer_config.json",
+      "klein-9b-series-50x-above-base-model/tokenizer/vocab.json",
+      "klein-9b-series-50x-above-base-model/transformer/config.json",
+      "klein-9b-series-50x-above-base-model/vae/config.json",
       "klein-9b-series-50x-above-base-model/vae/diffusion_pytorch_model.safetensors",
+      "klein-9b-series-50x-below-base-model/model_index.json",
+      "klein-9b-series-50x-below-base-model/quantfunc_config.json",
+      "klein-9b-series-50x-below-base-model/scheduler/scheduler_config.json",
+      "klein-9b-series-50x-below-base-model/text_encoder/config.json",
       "klein-9b-series-50x-below-base-model/text_encoder/model.safetensors",
+      "klein-9b-series-50x-below-base-model/tokenizer/added_tokens.json",
+      "klein-9b-series-50x-below-base-model/tokenizer/special_tokens_map.json",
+      "klein-9b-series-50x-below-base-model/tokenizer/tokenizer.json",
+      "klein-9b-series-50x-below-base-model/tokenizer/tokenizer_config.json",
+      "klein-9b-series-50x-below-base-model/tokenizer/vocab.json",
+      "klein-9b-series-50x-below-base-model/transformer/config.json",
+      "klein-9b-series-50x-below-base-model/vae/config.json",
       "klein-9b-series-50x-below-base-model/vae/diffusion_pytorch_model.safetensors",
+      "model_index.json",
+      "precision-config/30x-below-int4-i8-sample.json",
+      "precision-config/40x-int4-f8-sample.json",
+      "precision-config/50x-fp4-f8-sample.json",
+      "transformer/config.json",
       "transformer/klein-9b-30x-below-lighting.safetensors",
       "transformer/klein-9b-40x-lighting.safetensors",
       "transformer/klein-9b-50x-lighting.safetensors",
@@ -4376,6 +4376,8 @@
       "transformer/klein-9b-base-50x-lighting.safetensors"
     ],
     "QuantFunc/Nunchaku-Qwen-Image-2512": [
+      "comfyui-workflow-qwen-image-4step.json",
+      "config.json",
       "nunchaku_qwen_image_2512_balance_fp4.safetensors",
       "nunchaku_qwen_image_2512_balance_int4.safetensors",
       "nunchaku_qwen_image_2512_best_quality_fp4.safetensors",
@@ -4384,6 +4386,8 @@
       "nunchaku_qwen_image_2512_ultimate_speed_int4.safetensors"
     ],
     "QuantFunc/Nunchaku-Qwen-Image-EDIT-2511": [
+      "comfyui-workflow-qwen-edit-4step.json",
+      "config.json",
       "nunchaku_qwen_image_edit_2511_balance_fp4.safetensors",
       "nunchaku_qwen_image_edit_2511_balance_int4.safetensors",
       "nunchaku_qwen_image_edit_2511_best_quality_fp4.safetensors",
@@ -4590,6 +4594,9 @@
       "flux1-depth-dev-fp16-Q8_0-GGUF.gguf"
     ],
     "Winnougan/Comfy-Qwen3-VL-INT8": [
+      "Workflows/Winnougan_Boogu_INT8_WF.json",
+      "Workflows/Winnougan_Ideogram_4_INT8_WF (1).json",
+      "Workflows/Winnougan_Krea_2_INT8_WF.json",
       "qwen3vl_4b_int8_convrot.safetensors",
       "qwen3vl_8b_int8.safetensors"
     ],
@@ -4608,11 +4615,18 @@
       "Krea2_Turbo_int8mixed.safetensors",
       "Text Encoder/qwen3vl_4b_int8.safetensors",
       "Text Encoder/qwen3vl_4b_uncensored_int8_convrot.safetensors",
+      "Workflows/Krea%202%20simple%20workflow.json",
+      "Workflows/Krea2_Winnougan_Workflow.json",
+      "Workflows/Winnougan_Krea_2_INT8_TE_Diffuser_WF.json",
+      "Workflows/krea2_native_workflow.json",
       "krea2_turbo_mxfp8.safetensors",
       "krea2_turbo_nvfp4.safetensors"
     ],
     "Winnougan/LTX-2.3-INT8": [
+      "INT8 Workflows/Winnougan_LTX-2.3_INT8_WF.json",
+      "LTX-2.3_INT8_Prompt_Relay_WF.json",
       "Text Encoder INT8/gemma_3_12B_it_int8.safetensors",
+      "Winnougan_LTX2.3_INT8.json",
       "gemma_3_12B_it-int8tensormixed.safetensors",
       "ltx-2.3-22b-dev_int8mixed_rowwise.safetensors",
       "ltx-2.3-22b-distilled-1.1_int8mixed_rowwise.safetensors",
@@ -4622,6 +4636,8 @@
       "ltx-2.3_text_projection_fp8.safetensors"
     ],
     "Winnougan/Qwen-Image-INT8": [
+      "Samples_and_Workflow/Qwen_Edit_2511_INT8_Convrot_WF.json",
+      "Samples_and_Workflow/Qwen_Image_2512_INT8_Convrot_WF.json",
       "qwen_2.5_vl_7b_int8_convrot.safetensors",
       "qwen_image_2512_int8_convrot.safetensors",
       "qwen_image_edit_2511_int8_convrot.safetensors"
@@ -4657,12 +4673,26 @@
     "black-forest-labs/FLUX.1-dev": [
       "ae.safetensors",
       "flux1-dev.safetensors",
+      "model_index.json",
+      "scheduler/scheduler_config.json",
+      "text_encoder/config.json",
       "text_encoder/model.safetensors",
+      "text_encoder_2/config.json",
       "text_encoder_2/model-00001-of-00002.safetensors",
       "text_encoder_2/model-00002-of-00002.safetensors",
+      "text_encoder_2/model.safetensors.index.json",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "tokenizer_2/special_tokens_map.json",
+      "tokenizer_2/tokenizer.json",
+      "tokenizer_2/tokenizer_config.json",
+      "transformer/config.json",
       "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
       "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
       "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "black-forest-labs/FLUX.1-dev-FP8": [
@@ -4733,6 +4763,7 @@
       "flux2-dev-Q8_0.gguf"
     ],
     "city96/Qwen-Image-gguf": [
+      "media/qwen-image_workflow.json",
       "qwen-image-BF16.gguf",
       "qwen-image-Q2_K.gguf",
       "qwen-image-Q3_K_M.gguf",
@@ -4774,6 +4805,7 @@
       "umt5-xxl-encoder-Q8_0.gguf"
     ],
     "jayn7/Z-Image-GGUF": [
+      "example_workflow.json",
       "z_image-Q4_K_M.gguf",
       "z_image-Q4_K_S.gguf",
       "z_image-Q5_K_M.gguf",
@@ -4782,6 +4814,7 @@
       "z_image-Q8_0.gguf"
     ],
     "jayn7/Z-Image-Turbo-GGUF": [
+      "example_workflow.json",
       "z_image_turbo-Q3_K_M.gguf",
       "z_image_turbo-Q3_K_S.gguf",
       "z_image_turbo-Q4_K_M.gguf",
@@ -4919,6 +4952,8 @@
       "BASE/Krea-2-Base-Q5_K_S.gguf",
       "BASE/Krea-2-Base-Q6_K.gguf",
       "BASE/Krea-2-Base-Q8_0.gguf",
+      "Rebels KREA-2-TURBO.json",
+      "Rebels KREA-2.json",
       "TURBO/Krea-2-Turbo-Q3_K_M.gguf",
       "TURBO/Krea-2-Turbo-Q3_K_S.gguf",
       "TURBO/Krea-2-Turbo-Q4_K_M.gguf",
@@ -4991,7 +5026,8 @@
       "qwen3_8b_abliterated-int8simplemixed-block.safetensors",
       "qwen3_8b_abliterated.safetensors",
       "qwen3_8b_abliterated_v2-fp8mixed.safetensors",
-      "qwen3_8b_abliterated_v2.safetensors"
+      "qwen3_8b_abliterated_v2.safetensors",
+      "workflow_assets/fp8_scaled_flux2_w_enhanced_prompting-workflow.json"
     ],
     "silveroxides/Qwen-Image-fp8-scaled-quants": [
       "qwen_image_edit_2509_fp8mixed.safetensors",
@@ -5024,31 +5060,60 @@
       "wan2.2_ti2v_5B-fp8_scaled_original.safetensors"
     ],
     "stabilityai/sdxl-turbo": [
+      "model_index.json",
+      "scheduler/scheduler_config.json",
       "sd_xl_turbo_1.0.safetensors",
       "sd_xl_turbo_1.0_fp16.safetensors",
+      "text_encoder/config.json",
       "text_encoder/model.fp16.safetensors",
       "text_encoder/model.safetensors",
+      "text_encoder_2/config.json",
       "text_encoder_2/model.fp16.safetensors",
       "text_encoder_2/model.safetensors",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "tokenizer_2/special_tokens_map.json",
+      "tokenizer_2/tokenizer_config.json",
+      "tokenizer_2/vocab.json",
+      "unet/config.json",
       "unet/diffusion_pytorch_model.fp16.safetensors",
       "unet/diffusion_pytorch_model.safetensors",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.fp16.safetensors",
-      "vae/diffusion_pytorch_model.safetensors"
+      "vae/diffusion_pytorch_model.safetensors",
+      "vae_decoder/config.json",
+      "vae_encoder/config.json"
     ],
     "stabilityai/stable-diffusion-xl-base-1.0": [
+      "model_index.json",
+      "scheduler/scheduler_config.json",
       "sd_xl_base_1.0.safetensors",
       "sd_xl_base_1.0_0.9vae.safetensors",
       "sd_xl_offset_example-lora_1.0.safetensors",
+      "text_encoder/config.json",
       "text_encoder/model.fp16.safetensors",
       "text_encoder/model.safetensors",
+      "text_encoder_2/config.json",
       "text_encoder_2/model.fp16.safetensors",
       "text_encoder_2/model.safetensors",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "tokenizer_2/special_tokens_map.json",
+      "tokenizer_2/tokenizer_config.json",
+      "tokenizer_2/vocab.json",
+      "unet/config.json",
       "unet/diffusion_pytorch_model.fp16.safetensors",
       "unet/diffusion_pytorch_model.safetensors",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.fp16.safetensors",
       "vae/diffusion_pytorch_model.safetensors",
+      "vae_1_0/config.json",
       "vae_1_0/diffusion_pytorch_model.fp16.safetensors",
-      "vae_1_0/diffusion_pytorch_model.safetensors"
+      "vae_1_0/diffusion_pytorch_model.safetensors",
+      "vae_decoder/config.json",
+      "vae_encoder/config.json"
     ],
     "stduhpf/ideogram-4-gguf": [
       "ideogram4-Q4_K.gguf",
@@ -5071,46 +5136,106 @@
       "svdq-fp4_r32-qwen-image-edit-2511.safetensors"
     ],
     "tonera/FLUX.2-klein-4B-Nunchaku": [
+      "configuration.json",
+      "model_index.json",
+      "scheduler/scheduler_config.json",
       "svdq-fp4_r32-FLUX.2-klein-4B-Nunchaku.safetensors",
       "svdq-int4_r32-FLUX.2-klein-4B-Nunchaku.safetensors",
+      "text_encoder/config.json",
+      "text_encoder/generation_config.json",
       "text_encoder/model-00001-of-00002.safetensors",
       "text_encoder/model-00002-of-00002.safetensors",
+      "text_encoder/model.safetensors.index.json",
+      "tokenizer/added_tokens.json",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "transformer/config.json",
       "transformer/diffusion_pytorch_model.safetensors",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "tonera/FLUX.2-klein-9B-Nunchaku": [
+      "configuration.json",
+      "model_index.json",
+      "scheduler/scheduler_config.json",
       "svdq-fp4_r32-FLUX.2-klein-9B-Nunchaku.safetensors",
       "svdq-int4_r32-FLUX.2-klein-9B-Nunchaku.safetensors",
+      "text_encoder/config.json",
+      "text_encoder/generation_config.json",
       "text_encoder/model-00001-of-00004.safetensors",
       "text_encoder/model-00002-of-00004.safetensors",
       "text_encoder/model-00003-of-00004.safetensors",
       "text_encoder/model-00004-of-00004.safetensors",
+      "text_encoder/model.safetensors.index.json",
+      "tokenizer/added_tokens.json",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "transformer/config.json",
       "transformer/diffusion_pytorch_model-00001-of-00002.safetensors",
       "transformer/diffusion_pytorch_model-00002-of-00002.safetensors",
+      "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "tonera/Qwen-Image-2512-Lightning-Nunchaku": [
+      "configuration.json",
+      "dc_merge_lora_meta.json",
+      "model_index.json",
+      "scheduler/scheduler_config.json",
       "svdq-fp4_r32-Qwen-Image-2512-Lightning-Nunchaku.safetensors",
       "svdq-int4_r32-Qwen-Image-2512-Lightning-Nunchaku.safetensors",
+      "text_encoder/config.json",
+      "text_encoder/generation_config.json",
       "text_encoder/model-00001-of-00004.safetensors",
       "text_encoder/model-00002-of-00004.safetensors",
       "text_encoder/model-00003-of-00004.safetensors",
       "text_encoder/model-00004-of-00004.safetensors",
+      "text_encoder/model.safetensors.index.json",
+      "tokenizer/added_tokens.json",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "transformer/config.json",
       "transformer/diffusion_pytorch_model-00001-of-00005.safetensors",
       "transformer/diffusion_pytorch_model-00002-of-00005.safetensors",
       "transformer/diffusion_pytorch_model-00003-of-00005.safetensors",
       "transformer/diffusion_pytorch_model-00004-of-00005.safetensors",
       "transformer/diffusion_pytorch_model-00005-of-00005.safetensors",
+      "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "tonera/Qwen-Image-Edit-2511-Lightning-Nunchaku": [
+      "configuration.json",
+      "dc_merge_lora_meta.json",
+      "model_index.json",
+      "processor/added_tokens.json",
+      "processor/preprocessor_config.json",
+      "processor/special_tokens_map.json",
+      "processor/tokenizer.json",
+      "processor/tokenizer_config.json",
+      "processor/video_preprocessor_config.json",
+      "processor/vocab.json",
+      "scheduler/scheduler_config.json",
       "svdq-fp4_r32-Qwen-Image-Edit-2511-Lightning-Nunchaku.safetensors",
       "svdq-int4_r32-Qwen-Image-Edit-2511-Lightning-Nunchaku.safetensors",
       "svdq-int8_r32-Qwen-Image-Edit-2511-Lightning-Nunchaku.safetensors",
+      "text_encoder/config.json",
+      "text_encoder/generation_config.json",
       "text_encoder/model-00001-of-00004.safetensors",
       "text_encoder/model-00002-of-00004.safetensors",
       "text_encoder/model-00003-of-00004.safetensors",
       "text_encoder/model-00004-of-00004.safetensors",
+      "text_encoder/model.safetensors.index.json",
+      "tokenizer/added_tokens.json",
+      "tokenizer/special_tokens_map.json",
+      "tokenizer/tokenizer_config.json",
+      "tokenizer/vocab.json",
+      "vae/config.json",
       "vae/diffusion_pytorch_model.safetensors"
     ],
     "unsloth/ERNIE-Image-GGUF": [
@@ -5476,6 +5601,7 @@
       "Qwen2.5-VL-7B-Instruct-UD-Q5_K_XL.gguf",
       "Qwen2.5-VL-7B-Instruct-UD-Q6_K_XL.gguf",
       "Qwen2.5-VL-7B-Instruct-UD-Q8_K_XL.gguf",
+      "config.json",
       "mmproj-BF16.gguf",
       "mmproj-F16.gguf",
       "mmproj-F32.gguf"
@@ -5533,7 +5659,8 @@
       "Qwen3-8B-UD-Q4_K_XL.gguf",
       "Qwen3-8B-UD-Q5_K_XL.gguf",
       "Qwen3-8B-UD-Q6_K_XL.gguf",
-      "Qwen3-8B-UD-Q8_K_XL.gguf"
+      "Qwen3-8B-UD-Q8_K_XL.gguf",
+      "config.json"
     ],
     "unsloth/Qwen3-VL-4B-Instruct-GGUF": [
       "Qwen3-VL-4B-Instruct-BF16.gguf",
@@ -5602,6 +5729,7 @@
       "z-image-turbo-Q8_0.gguf"
     ],
     "unsloth/gemma-3-12b-it-GGUF": [
+      "config.json",
       "gemma-3-12b-it-BF16.gguf",
       "gemma-3-12b-it-IQ4_NL.gguf",
       "gemma-3-12b-it-IQ4_XS.gguf",
@@ -5633,6 +5761,7 @@
       "mmproj-F32.gguf"
     ],
     "vantagewithai/ERNIE-Image-GGUF-Base-Turbo": [
+      "Vantage-Ernie-image.json",
       "base/ernie-image-Q3_K_M.gguf",
       "base/ernie-image-Q3_K_S.gguf",
       "base/ernie-image-Q4_0.gguf",
@@ -5659,6 +5788,7 @@
       "turbo/ernie-image-turbo-Q8_0.gguf"
     ],
     "vantagewithai/Krea-2-Raw-GGUF": [
+      "Vantage_Krea-2-Raw.json",
       "krea2_raw-Q2_K.gguf",
       "krea2_raw-Q3_K_M.gguf",
       "krea2_raw-Q3_K_S.gguf",
@@ -5674,6 +5804,7 @@
       "krea2_raw-Q8_0.gguf"
     ],
     "vantagewithai/Krea-2-Turbo-GGUF": [
+      "Vantage_Krea-2-Turbo.json",
       "krea2_turbo-Q2_K.gguf",
       "krea2_turbo-Q3_K_M.gguf",
       "krea2_turbo-Q3_K_S.gguf",
@@ -5689,6 +5820,7 @@
       "krea2_turbo-Q8_0.gguf"
     ],
     "vantagewithai/LTX-2.3-GGUF": [
+      "Vantage-LTX2.3-Advanced-Workflow-GGUF-Support.json",
       "dev/ltx-2-3-22b-dev-Q3_K_M.gguf",
       "dev/ltx-2-3-22b-dev-Q3_K_S.gguf",
       "dev/ltx-2-3-22b-dev-Q4_0.gguf",
@@ -5726,7 +5858,9 @@
       "Qwen-Image-2512-Q5_K_M.gguf",
       "Qwen-Image-2512-Q5_K_S.gguf",
       "Qwen-Image-2512-Q6_K.gguf",
-      "Qwen-Image-2512-Q8_0.gguf"
+      "Qwen-Image-2512-Q8_0.gguf",
+      "Vantage-Qwen-Image-2512.json",
+      "Vantage-Qwen-Image-Edit-2511.json"
     ],
     "vantagewithai/Qwen-Image-Edit-2511-GGUF": [
       "Qwen-Image-Edit-2511-Q2_K.gguf",
@@ -5741,7 +5875,10 @@
       "Qwen-Image-Edit-2511-Q5_K_M.gguf",
       "Qwen-Image-Edit-2511-Q5_K_S.gguf",
       "Qwen-Image-Edit-2511-Q6_K.gguf",
-      "Qwen-Image-Edit-2511-Q8_0.gguf"
+      "Qwen-Image-Edit-2511-Q8_0.gguf",
+      "Vantage-Qwen-Image-Edit-2511-Anything2Real.json",
+      "Vantage-Qwen-Image-Edit-2511-N0-get-Set-Nodes.json",
+      "Vantage-Qwen-Image-Edit-2511.json"
     ],
     "wangkanai/sdxl-fp8": [
       "checkpoints/sdxl/sdxl-base.safetensors",
@@ -5758,6 +5895,7 @@
     ]
   },
   "errors": [
+    "stduhpf: <urlopen error [Errno 11001] getaddrinfo failed>",
     "jayn7/WAN2.2-I2V-lightx2v-GGUF: HTTP Error 401: Unauthorized"
   ]
 }

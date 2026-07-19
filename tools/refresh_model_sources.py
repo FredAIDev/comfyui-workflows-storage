@@ -32,7 +32,7 @@ CANDIDATES = ROOT / "model-sources" / "candidates.json"
 
 API = "https://huggingface.co/api"
 UA = {"User-Agent": "comfyui-workflows-storage/refresh_model_sources"}
-MODEL_EXT = (".safetensors", ".gguf", ".sft")
+MODEL_EXT = (".safetensors", ".gguf", ".sft", ".json")  # .json = runtime-quant configs (QuantFunc) + comfy_config
 
 
 def get_json(url: str, retries: int = 3):
