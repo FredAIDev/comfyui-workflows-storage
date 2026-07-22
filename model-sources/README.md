@@ -42,6 +42,11 @@ one-click replacement.
   e.g. QuantFunc/Ideogram-4-Series) · `diffusers-only` (NOT ComfyUI-loadable —
   e.g. Krea 2 svdq) · `stale` (unmaintained 2024-era) · `experimental`.
 - `hw`: `any` · `blackwell` (nvfp4, svdq-fp4) — instance-conformance input.
+- Resolved entries carry the **bytes identity** since 2026-07-22: `size_mb`
+  and `sha256` (the HF **LFS oid**, i.e. the content hash — never the git
+  blob sha1). Non-LFS files (small configs) legitimately have `sha256: null`.
+  Consumers (ComfyDock import) fill absent local values from these and
+  NEVER overwrite a locally computed hash.
 - `files: null` = not yet enumerated. Run the refresh script, then ratify.
 - `companions._inherit`: reuse another line's companion set (e.g. all Qwen
   editions share the Qwen2.5-VL-7B TE and the qwen_image VAE).

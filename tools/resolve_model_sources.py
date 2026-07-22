@@ -105,7 +105,14 @@ def url_of(repo: str, file: str) -> str:
 def main() -> int:
     skeleton = json.loads(SOURCES.read_text(encoding="utf-8"))
     cands = json.loads(CANDIDATES.read_text(encoding="utf-8"))
-    enums: dict[str, list[str]] = cands.get("file_enumerations", {})
+    # Enumerations carry the BYTES IDENTITY since 2026-07-22 ({file, size,
+    # sha256 = LFS oid}); plain-string lists from older candidates still
+    # resolve (without identity) so the join never breaks on a stale file.
+    enums: dict[str, list[dict]] = {
+        repo: [f if isinstance(f, dict) else {"file": f, "size": None, "sha256": None}
+               for f in files]
+        for repo, files in cands.get("file_enumerations", {}).items()
+    }
 
     entries: list[dict] = []
     missing_repos: set[str] = set()
@@ -118,16 +125,26 @@ def main() -> int:
             missing_repos.add(repo)
             return
         is_svdq = loader.startswith("nunchaku") or grade.startswith("svdq") or grade == "svdq"
+
+        def identity(meta: dict) -> dict:
+            """size_mb + sha256 (LFS content hash) — None when unknown."""
+            size = meta.get("size")
+            return {"size_mb": round(size / (1024 * 1024), 1) if size else None,
+                    "sha256": meta.get("sha256")}
+
         if status == "config-only":
-            for f in files:
+            for meta in files:
+                f = meta["file"]
                 if f.lower().endswith(".json") and "config" in f.lower():
                     entries.append({
                         "line": line_id, "grade": "qfunc", "loader": "quantfunc-engine",
                         "hw": hw, "component": "runtime_config", "repo": repo,
                         "file": f, "url": url_of(repo, f), "quant": "runtime",
-                        "rank": None, "catalog_name": f.split("/")[-1]})
+                        "rank": None, "catalog_name": f.split("/")[-1],
+                        **identity(meta)})
             return
-        for f in files:
+        for meta in files:
+            f = meta["file"]
             if not f.lower().endswith(WEIGHT_EXT):
                 continue
             if _DIFFUSERS_DUMP.search(f.lower()):
@@ -142,7 +159,8 @@ def main() -> int:
                 "line": line_id, "grade": grade, "loader": loader, "hw": hw,
                 "component": comp, "repo": repo, "file": f,
                 "url": url_of(repo, f), "quant": quant, "rank": rank,
-                "catalog_name": svdq_catalog_name(f, is_svdq)})
+                "catalog_name": svdq_catalog_name(f, is_svdq),
+                **identity(meta)})
 
     # companion inheritance resolution
     lines = {ln["id"]: ln for ln in skeleton["model_lines"]}

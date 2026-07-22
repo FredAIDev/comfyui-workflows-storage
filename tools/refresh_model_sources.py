@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -69,13 +70,51 @@ def list_author_repos(author: str) -> list[dict]:
     return out
 
 
-def list_repo_files(repo_id: str) -> list[str] | None:
-    """Model-weight files of a repo (siblings), or None if repo is gone."""
-    data = get_json(f"{API}/models/{repo_id}")
-    if data is None:
-        return None
-    files = [s.get("rfilename") for s in data.get("siblings", [])]
-    return sorted(f for f in files if f and f.lower().endswith(MODEL_EXT))
+def list_repo_files(repo_id: str) -> list[dict] | None:
+    """Model-weight files of a repo with their BYTES IDENTITY, or None if the
+    repo is gone: [{file, size, sha256}] from the tree endpoint. sha256 is the
+    LFS oid (the content hash the ComfyDock store is keyed on) — NEVER the git
+    blob sha1 (`oid` field), which must not be aliased into sha256. Non-LFS
+    files (small configs) legitimately carry sha256=None.
+
+    Follows the tree endpoint's cursor pagination (Link: rel=\"next\")."""
+    out: list[dict] = []
+    url: str | None = f"{API}/models/{repo_id}/tree/main?recursive=true"
+    first = True
+    while url:
+        for attempt in range(3):
+            try:
+                req = urllib.request.Request(url, headers=UA)
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    page = json.load(resp)
+                    link = resp.headers.get("Link") or ""
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    return None if first else out
+                if e.code == 429 and attempt < 2:
+                    time.sleep(10 * (attempt + 1))
+                    continue
+                raise
+            except urllib.error.URLError:
+                if attempt < 2:
+                    time.sleep(5)
+                    continue
+                raise
+        else:
+            return None if first else out
+        first = False
+        for item in page or []:
+            path = item.get("path") or ""
+            if item.get("type") != "file" or not path.lower().endswith(MODEL_EXT):
+                continue
+            lfs = item.get("lfs") or {}
+            out.append({"file": path,
+                        "size": item.get("size"),
+                        "sha256": lfs.get("oid")})
+        m = re.search(r'<([^>]+)>;\s*rel="next"', link)
+        url = m.group(1) if m else None
+    return sorted(out, key=lambda f: f["file"])
 
 
 def referenced_repos(sources: dict) -> set[str]:
@@ -123,7 +162,7 @@ def main() -> int:
         "authors_polled": authors,
         "new_repos": {},        # author -> [repo ids not referenced yet]
         "gone_repos": [],       # referenced repos that 404
-        "file_enumerations": {},  # repo id -> [model files] (for files:null entries)
+        "file_enumerations": {},  # repo id -> [{file, size, sha256}] (bytes identity rides with the name)
         "errors": [],
     }
 
