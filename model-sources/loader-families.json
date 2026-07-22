@@ -7,7 +7,17 @@
       "label": "Standard",
       "node": "Load Diffusion Model (comfy_quant metadata, ComfyUI >= 0.27)",
       "swappable": true,
-      "values": ["base", "f32", "bf16", "fp16", "fp8", "mxfp8", "int8", "nvfp4", "int4"],
+      "values": [
+        "base",
+        "f32",
+        "bf16",
+        "fp16",
+        "fp8",
+        "mxfp8",
+        "int8",
+        "nvfp4",
+        "int4"
+      ],
       "value_map": {
         "base": "base",
         "f32": "f32",
@@ -37,7 +47,19 @@
       "label": "GGUF",
       "node": "Unet Loader (GGUF)",
       "swappable": true,
-      "values": ["base", "f32", "f16", "bf16", "q8", "q6", "q5", "q4", "q3", "q2", "q1"],
+      "values": [
+        "base",
+        "f32",
+        "f16",
+        "bf16",
+        "q8",
+        "q6",
+        "q5",
+        "q4",
+        "q3",
+        "q2",
+        "q1"
+      ],
       "value_map": {
         "base": "base",
         "f32": "f32",
@@ -89,7 +111,12 @@
       "label": "Nunchaku (official)",
       "node": "official Nunchaku nodes (nunchaku-ai; incl. the two ratified QuantFunc Qwen repos the official node reads)",
       "swappable": true,
-      "values": ["svdq_int4", "svdq_fp4", "svdq_int8", "base"],
+      "values": [
+        "svdq_int4",
+        "svdq_fp4",
+        "svdq_int8",
+        "base"
+      ],
       "value_map": {
         "base": "base",
         "svdq_int4": "svdq_int4",
@@ -104,7 +131,11 @@
       "label": "Nunchaku (fork)",
       "node": "forked Nunchaku loader (Klein 4B/9B support) — NOT interchangeable with the official node",
       "swappable": true,
-      "values": ["svdq_int4", "svdq_fp4", "base"],
+      "values": [
+        "svdq_int4",
+        "svdq_fp4",
+        "base"
+      ],
       "value_map": {
         "base": "base",
         "svdq_int4": "svdq_int4",
@@ -129,7 +160,7 @@
     },
     {
       "id": "quantfunc-engine",
-      "label": "QuantFunc engine (config-only)",
+      "label": "QuantFunc engine",
       "node": null,
       "swappable": false,
       "values": [],
