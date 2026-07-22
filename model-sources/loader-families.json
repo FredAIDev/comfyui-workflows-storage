@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "doctrine": "One model file = ONE family (the node boundary) x ONE coarse value (the filter level). The exact quant token is kept as quant_detail. Fine->coarse absorption is DECLARED here per family, never guessed at runtime. Non-swappable families carry no coarse value and are excluded from the derivation assistant. Human-readable twin: docs/loader-families.md in the ComfyDock repo.",
+  "families": [
+    {
+      "id": "standard",
+      "label": "Standard",
+      "node": "Load Diffusion Model (comfy_quant metadata, ComfyUI >= 0.27)",
+      "swappable": true,
+      "values": ["base", "f32", "bf16", "fp16", "fp8", "mxfp8", "int8", "nvfp4", "int4"],
+      "value_map": {
+        "base": "base",
+        "f32": "f32",
+        "bf16": "bf16",
+        "fp16": "fp16",
+        "fp8": "fp8",
+        "fp8_e4m3fn": "fp8",
+        "fp8_e5m2": "fp8",
+        "fp8_scaled": "fp8",
+        "fp8mixed": "fp8",
+        "fp8_mixed": "fp8",
+        "mxfp8": "mxfp8",
+        "int8": "int8",
+        "int8_convrot": "int8",
+        "int8rowwise": "int8",
+        "int8mixed": "int8",
+        "convrot": "int8",
+        "nvfp4": "nvfp4",
+        "nvfp4_mixed": "nvfp4",
+        "fp4": "nvfp4",
+        "fp4_mixed": "nvfp4",
+        "int4": "int4"
+      }
+    },
+    {
+      "id": "gguf",
+      "label": "GGUF",
+      "node": "Unet Loader (GGUF)",
+      "swappable": true,
+      "values": ["base", "f32", "f16", "bf16", "q8", "q6", "q5", "q4", "q3", "q2", "q1"],
+      "value_map": {
+        "base": "base",
+        "f32": "f32",
+        "f16": "f16",
+        "fp16": "f16",
+        "bf16": "bf16",
+        "q8_0": "q8",
+        "ud-q8_k_xl": "q8",
+        "q6_k": "q6",
+        "ud-q6_k_xl": "q6",
+        "q5_0": "q5",
+        "q5_1": "q5",
+        "q5_k": "q5",
+        "q5_k_m": "q5",
+        "q5_k_s": "q5",
+        "ud-q5_k_m": "q5",
+        "ud-q5_k_s": "q5",
+        "ud-q5_k_xl": "q5",
+        "q4_0": "q4",
+        "q4_1": "q4",
+        "q4_k": "q4",
+        "q4_k_m": "q4",
+        "q4_k_s": "q4",
+        "iq4_nl": "q4",
+        "iq4_xs": "q4",
+        "ud-q4_k_m": "q4",
+        "ud-q4_k_s": "q4",
+        "ud-q4_k_xl": "q4",
+        "q3_k_l": "q3",
+        "q3_k_m": "q3",
+        "q3_k_s": "q3",
+        "ud-q3_k_m": "q3",
+        "ud-q3_k_s": "q3",
+        "ud-q3_k_xl": "q3",
+        "ud-iq3_xxs": "q3",
+        "q2_k": "q2",
+        "q2_k_l": "q2",
+        "q2_k_m": "q2",
+        "ud-q2_k": "q2",
+        "ud-q2_k_xl": "q2",
+        "ud-iq2_m": "q2",
+        "ud-iq2_xxs": "q2",
+        "ud-iq1_m": "q1",
+        "ud-iq1_s": "q1"
+      }
+    },
+    {
+      "id": "nunchaku",
+      "label": "Nunchaku (official)",
+      "node": "official Nunchaku nodes (nunchaku-ai; incl. the two ratified QuantFunc Qwen repos the official node reads)",
+      "swappable": true,
+      "values": ["svdq_int4", "svdq_fp4", "svdq_int8", "base"],
+      "value_map": {
+        "base": "base",
+        "svdq_int4": "svdq_int4",
+        "int4": "svdq_int4",
+        "svdq_fp4": "svdq_fp4",
+        "fp4": "svdq_fp4",
+        "int8": "svdq_int8"
+      }
+    },
+    {
+      "id": "nunchaku-fork",
+      "label": "Nunchaku (fork)",
+      "node": "forked Nunchaku loader (Klein 4B/9B support) — NOT interchangeable with the official node",
+      "swappable": true,
+      "values": ["svdq_int4", "svdq_fp4", "base"],
+      "value_map": {
+        "base": "base",
+        "svdq_int4": "svdq_int4",
+        "svdq_fp4": "svdq_fp4"
+      }
+    },
+    {
+      "id": "sdcpp",
+      "label": "stable-diffusion.cpp",
+      "node": null,
+      "swappable": false,
+      "values": [],
+      "value_map": {}
+    },
+    {
+      "id": "diffusers",
+      "label": "Diffusers-only",
+      "node": null,
+      "swappable": false,
+      "values": [],
+      "value_map": {}
+    },
+    {
+      "id": "quantfunc-engine",
+      "label": "QuantFunc engine (config-only)",
+      "node": null,
+      "swappable": false,
+      "values": [],
+      "value_map": {}
+    }
+  ]
+}
